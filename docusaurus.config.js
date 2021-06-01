@@ -140,4 +140,9 @@ module.exports = {
       },
     ],
   ],
+  scripts: [
+    {
+      src: 'js/freddyfeedback.js',
+    },
+  ],
 };

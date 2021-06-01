@@ -29,3 +29,5 @@ From iPad OS 13, we have multiple windows support inside Blink, and each window 
 
 ### How to enable OSC52 support in Mosh?
 You need to build Mosh from source with this patch: [Support additional OSC 52 clipboard types #1104](https://github.com/mobile-shell/mosh/pull/1104#issuecomment-710754740)
+
+<div id="fyfk-widget"></div>

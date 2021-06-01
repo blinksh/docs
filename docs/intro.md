@@ -20,3 +20,5 @@ But, Blink is much more. Please read on.
 - We've incorporated `SplitView`, for those necessary Google searches and chats with coworkers.
 
 Blink is open source software. Participate in our community, and don’t forget to leave us your feedback and your feature(s) requests. Enjoy!
+
+<div id="fyfk-widget"></div>
