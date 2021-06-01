@@ -20,3 +20,5 @@ Here are two recordings that show the issue: `Cmd-tab` in [Pages.app](https://yo
 Go to iOS Settings -> Accessibility -> Full Keyboard Access -> Commands -> Activate and change `Space` to `shift + space` or other shortcut.
 
 That way you will have full keyboard access and spacebar working in Blink
+
+<div id="fyfk-widget"></div>

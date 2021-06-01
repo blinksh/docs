@@ -139,3 +139,5 @@ open url
 ```
 
 This whirlwind tour of the Blink Shell just scratches the surface of what you can do with Blink. Go ahead and put your command line chops to use with our innovative command line interface to unlock a whole new world of mobile functionality.
+
+<div id="fyfk-widget"></div>

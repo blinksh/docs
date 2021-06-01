@@ -160,3 +160,5 @@ Change "Prss and send" to **None** and "As modifier" to **ESC** option in Config
 ### VIM: Exit insert mode without ESC key
 
 Change CapsLock in Blink Settings to Control and press Ctrl(CapsLock) + [ to exit insert mode on iPad keyboards without ESC key.
+
+<div id="fyfk-widget"></div>

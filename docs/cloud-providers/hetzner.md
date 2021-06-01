@@ -60,3 +60,5 @@ ssh [host]
 ```
 
 ![finally connected](hetzner/finally_connected.png)
+
+<div id="fyfk-widget"></div>

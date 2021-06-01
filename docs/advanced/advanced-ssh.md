@@ -64,3 +64,5 @@ SSH jump hosts eliminate the need for SSH agent forwarding, offering a more secu
 ## Venture Forth with Your Advanced SSH Knowledge
 
 We hope this guide to advanced SSH has been helpful. Blink Shell, with its native shell and SSH support combined with your knowledge of SSH agent forwarding, jump hosts, SSH tunnels and persistent connections transforms your iOS device into a networking and development powerhouse.
+
+<div id="fyfk-widget"></div>

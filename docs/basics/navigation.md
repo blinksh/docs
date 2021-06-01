@@ -74,3 +74,5 @@ We sincerely appreciate your support and use of Blink. You can contact us via [e
 When a crash occurs in the application we receive a crash report. When this happens, please [email](mailto:hello@blink.sh) us or open an issue on [GitHub](https://github.com/blinksh/blink/issues).
 
 If you have an idea for a feature? Join our community on GitHub to send us your suggestions! We want to make Blink the most awesome terminal ever!
+
+<div id="fyfk-widget"></div>

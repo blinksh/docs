@@ -51,3 +51,5 @@ As you can see there are multiple options available and prices that suit your ne
 From production servers behind load balancers to test and development servers, Digital Ocean's Droplets have you covered. Pair your Droplet with Mosh and have an always-on Linux server at your command - reachable from any device from anywhere with Internet access.
 
 In future articles, we'll explain how to set up a development environment, install VS Code remote extensions or even Jupyter Notebooks.
+
+<div id="fyfk-widget"></div>

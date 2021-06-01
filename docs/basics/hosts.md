@@ -90,3 +90,5 @@ Command line parameters always have preference over configuration. You can redef
 ```bash
 mosh root@plankton
 ```
+
+<div id="fyfk-widget"></div>

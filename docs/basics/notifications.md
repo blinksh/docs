@@ -64,3 +64,5 @@ echo -e "\033]777;notify;Title;Body of the notification\a"
 Bear in mind that **some sequences are not supported in Mosh**.
 
 When Blink is sent to the background the system can kill the remote connection after some time. This is done by the system depending on different conditions. To avoid this and persist the SSH connection and receive these notifications after a while, use the [`geo` command](https://blink.sh/docs/advanced/advanced-ssh#persistent-ssh-connections-with-blink). It bypasses the system's background resources and leaves you with a better notification integration experience. Not doing this doesn't guarantee your session will stay up as long as necessary.
+
+<div id="fyfk-widget"></div>
