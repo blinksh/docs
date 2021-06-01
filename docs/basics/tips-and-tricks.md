@@ -69,6 +69,10 @@ ssh -L 3000:localhost:3000 ssh-host
 
 Taping three fingers on the screen will bring a Blink menu in which you can set the Cover, Fill, and Fit setting, adapting Blink to different screens and devices.
 
+- Cover: Edge to Edge
+- Fill: Space at the Top and Bottom
+- Fit: 5 points on all sides
+
 ![img](tips-and-tricks/Cover-Fill-Fit.png)
 
 ### External Display: Apple TV
@@ -78,6 +82,11 @@ You can use Apple TV as a second monitor, just start screen share on Apple TV an
 ### External Display: Split View
 
 For the external display to work, Blink needs to be an active window on the iPad. A very cool way to do this is to use Split View on the iPad, giving Blink ½ or ¼ of the screen, while the rest can be taken by Safari or anything else you need!
+
+### Display: What is Blink Window? 
+
+From iPad OS 13, we have multiple windows support inside Blink, and each window can have infinite tabs. 
+![Blink Shell Windows](tips-and-tricks/windows.png)
 
 You can also move windows between iPad and External Display with `Shift + CMD + O` or change focus to it using `CMD + O`.
 
@@ -125,6 +134,9 @@ bind-key -T copy-mode-vi v send-keys -X begin-selection
 bind-key -T copy-mode-vi y send-keys -X copy-selection
 bind-key -T copy-mode-vi r send-keys -X rectangle-toggle
 ```
+
+### How to enable OSC52 support in Mosh?
+You need to build Mosh from source with this patch: [Support additional OSC 52 clipboard types #1104](https://github.com/mobile-shell/mosh/pull/1104#issuecomment-710754740)
 
 ## Editors
 

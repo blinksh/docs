@@ -21,13 +21,4 @@ Yes, it has! We call it Community Edition, and you can sign up here: [https://co
 ### How to file a bug report?
 Fill an issue on our [GitHub](https://github.com/blinksh/blink/issues)
 
-## Blink Shell
-
-### What is Blink Window? 
-From iPad OS 13, we have multiple windows support inside Blink, and each window can have infinite tabs. 
-![Blink Shell Windows](faq/windows.png)
-
-### How to enable OSC52 support in Mosh?
-You need to build Mosh from source with this patch: [Support additional OSC 52 clipboard types #1104](https://github.com/mobile-shell/mosh/pull/1104#issuecomment-710754740)
-
 <div id="fyfk-widget"></div>
