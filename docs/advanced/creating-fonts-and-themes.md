@@ -1,8 +1,8 @@
 ---
-id: creating-themes
+id: creating-fonts-and-themes
 sidebar_position: 4
-sidebar_label: Creating Themes
-slug: /advanced/creating-themes
+sidebar_label: Creating Fonts & Themes
+slug: /advanced/creating-fonts-and-themes
 ---
 
 # Create your own Fonts & Themes
@@ -109,7 +109,7 @@ Read more about [font-face](https://css-tricks.com/snippets/css/using-font-face/
 As Blink Shell is a web terminal, themes and fonts are applied over the web and downloaded to your device for faster loading. We recommend GitHub as the fastest way to do that, but any file server will do.
 
 - Create a Gist and get the "raw" URL for it.
-- Go to Settings -> Appeareance -> (New Font || New Theme) -> Paste the URL and download it -> Save and select it from the list.
+- Go to `Settings` -> `Appeareance` -> `(New Font || New Theme)` -> Paste the URL and download it -> `Save` and select it from the list.
 
 ## Share it with others!
 
