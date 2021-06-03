@@ -60,7 +60,7 @@
     --custom-border-color: #d9eff0;
     --ifm-font-family-monospace: 'PragmataPro', Menlo, monospace;
 
-    --ifm-color-primary: #0ae0f0;
+    --ifm-color-primary: #00bde7;
     --ifm-color-primary-dark: #09cad8;
     --ifm-color-primary-darker: #08becc;
     --ifm-color-primary-darkest: #079da8;
@@ -128,7 +128,7 @@ html[data-theme='light'] code {
 }
 
 .footer {
-    border-top: 4px solid var(--ifm-color-primary);
+    border-top: 4px solid #0ae0f0;
     background-color: #011214;
     color: #344647;
 }
