@@ -1,0 +1,65 @@
+{
+  "redirects": [
+    {
+      "source": "https://blink.sh/docs",
+      "destination": "https://docs.blink.sh"
+    },
+    {
+      "source": "https://blink.sh/docs/basics/hosts",
+      "destination": "https://docs.blink.sh/basics/hosts"
+    },
+    {
+      "source": "https://blink.sh/basics/tips-and-tricks",
+      "destination": "https://docs.blink.sh/basics/tips-and-tricks"
+    },
+    {
+      "source": "https://blink.sh/basics/navigation",
+      "destination": "https://docs.blink.sh/basics/navigation"
+    },
+    {
+      "source": "https://blink.sh/basics/ssh-keys",
+      "destination": "https://docs.blink.sh/basics/ssh-keys"
+    },
+    {
+      "source": "https://blink.sh/basics/known-issues",
+      "destination": "https://docs.blink.sh/faq"
+    },
+    {
+      "source": "https://blink.sh/basics/notifications",
+      "destination": "https://docs.blink.sh/basics/notifications"
+    },
+    {
+      "source": "https://blink.sh/basics/known-issues",
+      "destination": "https://docs.blink.sh/basics/known-issues"
+    },
+    {
+      "source": "https://blink.sh/commands/overview",
+      "destination": "https://docs.blink.sh/basics/commands"
+    },
+    {
+      "source": "https://blink.sh/advanced/unix-roundup",
+      "destination": "https://docs.blink.sh/advanced/unix-roundup"
+    },
+    {
+      "source": "https://blink.sh/advanced/advanced-mosh",
+      "destination": "https://docs.blink.sh/advanced/advanced-mosh"
+    },
+    {
+      "source": "https://blink.sh/advanced/advanced-ssh",
+      "destination": "https://docs.blink.sh/advanced/advanced-ssh"
+    },
+    {
+      "source": "https://blink.sh/cloud-providers/aws",
+      "destination": "https://docs.blink.sh/cloud-providers/aws"
+    },
+    {
+      "source": "https://blink.sh/cloud-providers/do",
+      "destination": "https://docs.blink.sh/cloud-providers/do"
+    },
+    {
+      "source": "https://blink.sh/cloud-providers/hetzner",
+      "destination": "https://docs.blink.sh/cloud-providers/hetzner"
+    }
+  ],
+  "trailingSlash": false
+}

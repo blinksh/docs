@@ -1,148 +1,160 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Blink Shell',
-  url: 'https://blink.sh/docs',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'blinksh',
-  projectName: 'docs',
+  title: "Blink Shell",
+  url: "https://docs.blink.sh",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "blinksh",
+  projectName: "docs",
   themeConfig: {
+    announcementBar: {
+      id: "community_edition",
+      content:
+        'Sign up for our&nbsp;<a target="_blank" rel="noopener noreferrer" href="https://community.blink.sh">Free Community Edition</a>&nbsp;to test newest features!',
+      backgroundColor: "#ffb800",
+      textColor: "#060d0e",
+      isCloseable: true,
+    },
     colorMode: {
-      defaultMode: 'dark',
+      defaultMode: "dark",
       respectPrefersColorScheme: true,
       switchConfig: {
-        darkIcon: '  ',
+        darkIcon: "  ",
         darkIconStyle: {
-          marginTop: '1px',
+          marginTop: "1px",
         },
-        lightIcon: '  ',
+        lightIcon: "  ",
         lightIconStyle: {
-          marginTop: '1px',
+          marginTop: "1px",
         },
       },
     },
     navbar: {
-      title: 'Blink Shell',
+      title: "Blink Shell",
       logo: {
-        alt: 'Blink Shell',
-        src: 'img/logo.svg',
+        alt: "Blink Shell",
+        src: "img/logo.svg",
       },
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Documentation',
+          to: "/",
+          activeBasePath: "/",
+          position: "left",
+          label: "Documentation",
         },
         {
-          type: 'doc',
-          docId: 'basics/tips-and-tricks',
-          position: 'left',
-          label: 'Tips & Tricks',
+          to: "basics/tips-and-tricks",
+          activeBasePath: "basics/tips-and-tricks",
+          position: "left",
+          label: "Tips & Tricks",
         },
         {
-          href: 'https://github.com/blinksh/blink',
-          className: 'navbar-item-github',
-          position: 'right',
+          href: "https://github.com/blinksh/blink",
+          className: "github",
+          position: "right",
         },
         {
-          href: 'https://twitter.com/blinkshell',
-          className: 'navbar-item-twitter',
-          position: 'right',
+          href: "https://twitter.com/blinkshell",
+          className: "twitter",
+          position: "right",
         },
         {
-          type: 'search',
-          position: 'right',
+          href: "https://discord.gg/ZTtMfvK",
+          className: "discord",
+          position: "right",
+        },
+        {
+          type: "search",
+          position: "right",
         },
       ],
     },
     prism: {
-      theme: require('./src/blink'),
+      theme: require("./src/blink"),
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'About',
+          title: "About",
           items: [
             {
-              label: 'Blink Shell',
-                to: 'https://blink.sh',
+              label: "Blink Shell",
+              to: "https://blink.sh",
             },
             {
-              label: 'Community Edition',
-                to: 'https://community.blink.sh',
+              label: "Community Edition",
+              to: "https://community.blink.sh",
             },
           ],
         },
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Basics',
-              to: 'basics/hosts',
+              label: "Basics",
+              to: "/basics/navigation",
             },
             {
-              label: 'Advanced',
-              to: 'advanced/advanced-mosh',
+              label: "Advanced",
+              to: "/advanced/advanced-mosh",
             },
             {
-              label: 'Cloud Providers',
-              to: 'cloud-providers/aws',
+              label: "Cloud Providers",
+              to: "/cloud-providers/aws",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'GitHub',
-                href: 'https://github.com/blinksh/blink',
+              label: "GitHub",
+              href: "https://github.com/blinksh/blink",
             },
             {
-              label: 'Discord',
-                href: 'https://discord.gg/ZTtMfvK',
+              label: "Discord",
+              href: "https://discord.gg/ZTtMfvK",
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/blinkshell',
+              label: "Twitter",
+              href: "https://twitter.com/blinkshell",
             },
             {
-              label: 'Reddit',
-              href: 'https://reddit.com/BlinkShell',
+              label: "Reddit",
+              href: "https://reddit.com/BlinkShell",
             },
             {
-              label: 'Dev.to',
-              href: 'https://dev.to/blinkshell',
+              label: "Dev.to",
+              href: "https://dev.to/blinkshell",
             },
           ],
         },
       ],
-        copyright: `Copyright © ${new Date().getFullYear()} Blink Shell is developed by The Blink Shell Project.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Blink Shell is developed by The Blink Shell Project.`,
     },
   },
-  plugins: [require.resolve('docusaurus-lunr-search')],
+  plugins: [require.resolve("docusaurus-lunr-search")],
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/',
-          editUrl:
-            'https://github.com/blinksh/docs/edit/master/',
+          sidebarPath: require.resolve("./sidebars.js"),
+          routeBasePath: "/",
+          editUrl: "https://github.com/blinksh/docs/edit/master/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
   ],
   scripts: [
     {
-      src: 'js/freddyfeedback.js',
+      src: "js/freddyfeedback.js",
     },
   ],
 };

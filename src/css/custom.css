@@ -1,12 +1,3 @@
-/* stylelint-disable docusaurus/copyright-header */
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
-
 @font-face {
   font-family: "PT Root UI";
   font-style: normal;
@@ -53,110 +44,123 @@
   font-display: swap;
   src: url("https://blink.sh/fonts/pragmatapro_mono_b_liga_0827-webfont.woff2")
       format("woff2"),
-    url("https://blink.sh/fonts/pragmatapro_mono_b_liga_0827-webfont.woff") format("woff");
+    url("https://blink.sh/fonts/pragmatapro_mono_b_liga_0827-webfont.woff")
+      format("woff");
 }
 
 :root {
-    --custom-border-color: #d9eff0;
-    --ifm-font-family-monospace: 'PragmataPro', Menlo, monospace;
+  --custom-border-color: #d9eff0;
+  --ifm-font-family-monospace: "PragmataPro", Menlo, monospace;
 
-    --ifm-color-primary: #00C0CE;
-    --ifm-color-primary-dark: #09cad8;
-    --ifm-color-primary-darker: #08becc;
-    --ifm-color-primary-darkest: #079da8;
-    --ifm-color-primary-light: #1de7f6;
-    --ifm-color-primary-lighter: #29e8f6;
-    --ifm-color-primary-lightest: #4decf8;
-    --ifm-code-font-size: 95%;
+  --main: #0ae0f0;
+  --yellow: #ffb800;
+  --white: #ffffff;
+  --black: #060d0e;
+  --grey: #89a8aa;
+  --dark-grey: #344647;
+
+  --ifm-color-primary: #00c0ce;
+  --ifm-color-primary-dark: #09cad8;
+  --ifm-color-primary-darker: #08becc;
+  --ifm-color-primary-darkest: #079da8;
+  --ifm-color-primary-light: #1de7f6;
+  --ifm-color-primary-lighter: #29e8f6;
+  --ifm-color-primary-lightest: #4decf8;
+  --ifm-code-font-size: 95%;
 }
 
-html[data-theme='dark'] {
-    --custom-border-color: #005960;
+html[data-theme="dark"] {
+  --custom-border-color: #005960;
 
-    --ifm-search-bg-color: #060d0e;
+  --ifm-search-bg-color: #060d0e;
 
-    --ifm-navbar-background-color: #011214;
-    --ifm-background-color: #011214;
-    --ifm-color-primary: #0ae0f0;
-    --ifm-color-primary-dark: #09cad8;
-    --ifm-color-primary-darker: #08becc;
-    --ifm-color-primary-darkest: #079da8;
-    --ifm-color-primary-light: #1de7f6;
-    --ifm-color-primary-lighter: #29e8f6;
-    --ifm-color-primary-lightest: #4decf8;
-    --ifm-navbar-shadow: #0ae0f0;
+  --ifm-navbar-background-color: #011214;
+  --ifm-background-color: #011214;
+  --ifm-color-primary: #0ae0f0;
+  --ifm-color-primary-dark: #09cad8;
+  --ifm-color-primary-darker: #08becc;
+  --ifm-color-primary-darkest: #079da8;
+  --ifm-color-primary-light: #1de7f6;
+  --ifm-color-primary-lighter: #29e8f6;
+  --ifm-color-primary-lightest: #4decf8;
+  --ifm-navbar-shadow: #0ae0f0;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'PT Root UI', -apple-system, BlinkMacSystemFont,
-    '.SFNSText-Regular', 'Helvetica Neue', Helvetica, sans-serif;
+body {
+  font-family: "PT Root UI", -apple-system, BlinkMacSystemFont,
+    ".SFNSText-Regular", "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.docusaurus-highlight-code-line {
-  background-color: rgb(72, 77, 91);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6 {
+  font-family: var(--ifm-font-family-monospace);
+  font-weight: normal;
+  text-transform: uppercase;
+  display: flex;
 }
 
-html[data-theme='dark'] code {
+.container h3:before,
+.container h4:before,
+.container h5:before,
+.container h6:before {
+  content: "/\0000a0";
+  color: var(--yellow);
+}
+
+html[data-theme="light"] li code,
+html[data-theme="dark"] li code,
+html[data-theme="light"] p code,
+html[data-theme="dark"] p code {
   display: inline-flex;
   background-color: rgba(10, 224, 240, 0.2);
   border-radius: 8px;
   padding: 4px 12px;
-  font-size: 0.7em;
-  font-weight: bold;
+  font-size: 0.8em;
   border: none;
   color: var(--ifm-color-primary);
 }
 
-html[data-theme='light'] code {
-  display: inline-flex;
-  background-color: rgba(10, 224, 240, 0.2);
-  border-radius: 8px;
-  padding: 4px 12px;
-  font-size: 0.7em;
-  font-weight: bold;
-  border: none;
+html[data-theme="light"] li code,
+html[data-theme="light"] p code {
   color: #00cbe7;
 }
 
 .footer {
-    border-top: 4px solid #0ae0f0;
-    background-color: #011214;
-    color: #344647;
+  border-top: 4px solid #0ae0f0;
+  background-color: #011214;
+  color: #344647;
 }
 
 .footer h4 {
-    text-transform: uppercase;
+  text-transform: uppercase;
+  font-family: var(--ifm-font-family-monospace);
 }
 
 .footer a {
-    color: #89a8aa;
+  color: #89a8aa;
+  font-family: var(--ifm-font-family-monospace);
 }
 
 .markdown {
-    font-size: 1.4em;
-}
-
-.pagination-nav__link:hover {
-    box-shadow: 0px 0px 10px rgba(10, 224, 240, 0.4);
-    background-color: rgba(10, 224, 240, 0.05);
-    border-color: var(--ifm-color-primary);
+  font-size: 1.4em;
 }
 
 .pagination-nav__link {
   border-color: var(--custom-border-color);
 }
 
+.pagination-nav__link:hover {
+  box-shadow: 0px 0px 10px rgba(10, 224, 240, 0.4);
+  background-color: rgba(10, 224, 240, 0.05);
+  border-color: var(--ifm-color-primary);
+}
+
 .react-toggle-track {
-    background-color: #005960 !important;
+  background-color: #005960 !important;
 }
 
 .table-of-contents {
@@ -164,91 +168,59 @@ html[data-theme='light'] code {
   font-weight: bold;
 }
 
-.navbar-item-github {
-  display: flex !important;
-  align-items: center;
-  justify-items: center;
-  justify-content: end;
+.navbar__link {
+  padding: 0;
+  font-family: var(--ifm-font-family-monospace);
+  text-transform: none;
 }
 
-div[class^='docSidebarContainer_'] {
+.navbar__link:after,
+.navbar__link:before {
+  content: "\0000a0\0000a0\0000a0";
+}
+
+.navbar__link:hover {
+  color: var(--main);
+}
+
+.navbar__link--active:before,
+.navbar__link:hover:before {
+  content: "\0000a0{\0000a0";
+  color: var(--yellow);
+}
+
+.navbar__link--active:after,
+.navbar__link:hover:after {
+  content: "\0000a0}\0000a0";
+  color: var(--yellow);
+}
+
+div[class^="docSidebarContainer_"] {
   border-right-color: var(--custom-border-color);
 }
 
-@media screen and (max-width: 580px) {
-  .navbar__items .navbar-item-github {
-    display: none !important;
-  }
-}
-
-.navbar-item-github:hover {
-  opacity: 0.6;
-}
-
-.navbar-item-github:before {
-  margin-right: 0.5rem;
-  content: '';
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-html[data-theme='dark'] .navbar-item-github:before {
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
-    no-repeat;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.navbar-item-twitter {
-  display: flex !important;
-  align-items: center;
-  justify-items: center;
-  justify-content: end;
-}
-
-@media screen and (max-width: 580px) {
-  .navbar__items .navbar-item-twitter {
-    display: none !important;
-  }
-}
-
-.navbar-item-twitter:hover {
-  opacity: 0.6;
-}
-
-.navbar-item-twitter:before {
-  margin-right: 0.5rem;
-  content: '';
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 335 276' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m302 70a195 195 0 0 1 -299 175 142 142 0 0 0 97 -30 70 70 0 0 1 -58 -47 70 70 0 0 0 31 -2 70 70 0 0 1 -57 -66 70 70 0 0 0 28 5 70 70 0 0 1 -18 -90 195 195 0 0 0 141 72 67 67 0 0 1 116 -62 117 117 0 0 0 43 -17 65 65 0 0 1 -31 38 117 117 0 0 0 39 -11 65 65 0 0 1 -32 35'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-html[data-theme='dark'] .navbar-item-twitter:before {
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 335 276' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='m302 70a195 195 0 0 1 -299 175 142 142 0 0 0 97 -30 70 70 0 0 1 -58 -47 70 70 0 0 0 31 -2 70 70 0 0 1 -57 -66 70 70 0 0 0 28 5 70 70 0 0 1 -18 -90 195 195 0 0 0 141 72 67 67 0 0 1 116 -62 117 117 0 0 0 43 -17 65 65 0 0 1 -31 38 117 117 0 0 0 39 -11 65 65 0 0 1 -32 35'/%3E%3C/svg%3E")
-    no-repeat;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .menu__link {
-    border-radius: 0;
+  border-radius: 0;
+  font-family: var(--ifm-font-family-monospace);
 }
 .menu__link--active {
-    border-right: 2px solid var(--ifm-color-primary);
+  border-right: 2px solid var(--ifm-color-primary);
 }
 
 .menu.menu--responsive {
   padding-right: 0;
+  background: var(--ifm-navbar-background-color);
+}
+
+.button.button--secondary {
+  color: var(--black);
+  background-color: var(--yellow);
+  border-color: var(--yellow);
+}
+
+.button.button--secondary:hover {
+  color: var(--yellow);
+  background-color: var(--black);
 }
 
 @media screen and (max-width: 996px) {
@@ -257,92 +229,151 @@ html[data-theme='dark'] .navbar-item-twitter:before {
   }
 }
 
-html[data-theme='dark'] .navbar {
-    border-bottom: 1px solid var(--custom-border-color);
+html[data-theme="dark"] .navbar {
+  border-bottom: 1px solid var(--custom-border-color);
 }
 
-html[data-theme='dark'] blockquote {
+html[data-theme="dark"] blockquote {
   color: #344647;
   border-left-color: #344647;
 }
 
+div[class^="announcementBar"],
+div[class*=" announcementBar"] {
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div[class^="announcementBar"] div,
+div[class*=" announcementBar"] a {
+  font-size: 1em !important;
+}
+
+div[class*=" announcementBar"] a {
+  font-weight: bold !important;
+}
+
+@media screen and (max-width: 600px) {
+  div[class^="announcementBar"] div,
+  div[class*=" announcementBar"] a {
+    font-size: 0.8em !important;
+  }
+}
+
+.twitter,
+.github,
+.discord {
+  opacity: 0.8;
+  display: block;
+  text-indent: -9999px;
+  width: 26px;
+  height: 26px;
+  background: url(/img/twitter.svg);
+  background-size: 26px 26px;
+  margin: auto 10px;
+}
+
+.github {
+  background: url(/img/github.svg);
+}
+
+.discord {
+  background: url(/img/discord.svg);
+  margin: 0 20px 0 10px;
+}
+
+.twitter:hover,
+.github:hover,
+.discord:hover {
+  opacity: 0.4;
+}
+
 /* Search */
 
-html[data-theme='light'] .search-bar {
-    background-color: #d9eff0;
-}
-
-html[data-theme='dark'] .search-bar {
-    background-color: #005960;
-}
-
 .search-bar {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
-html[data-theme='dark'] .algolia-docsearch-footer {
-    border-bottom: 1px solid #011214 !important;
+html[data-theme="light"] .search-bar {
+  background-color: #d9eff0;
 }
 
-html[data-theme='dark'] .algolia-docsearch-footer,
-html[data-theme='dark'] .algolia-docsearch-suggestion--wrapper {
-    background: #011214 !important;
+html[data-theme="dark"] .search-bar {
+  background-color: #005960;
 }
 
-html[data-theme='dark'] .ds-dropdown-menu:before,
-html[data-theme='dark'] .algolia-docsearch-suggestion--no-results,
-html[data-theme='dark'] .algolia-docsearch-suggestion--category-header {
-    background-color: #163A3F !important;
+html[data-theme="dark"] .algolia-docsearch-footer {
+  border-bottom: 1px solid #011214 !important;
 }
 
-html[data-theme='light'] .ds-dropdown-menu:before,
-html[data-theme='light'] .algolia-docsearch-suggestion--no-results,
-html[data-theme='light'] .algolia-docsearch-suggestion--category-header {
-    background-color: #060d0e !important;
+html[data-theme="dark"] .algolia-docsearch-footer,
+html[data-theme="dark"] .algolia-docsearch-suggestion--wrapper {
+  background: #011214 !important;
 }
 
-html[data-theme='dark'] .algolia-docsearch-suggestion--title {
-    color: var(--ifm-color-primary) !important;
+html[data-theme="dark"] .ds-dropdown-menu:before,
+html[data-theme="dark"] .algolia-docsearch-suggestion--no-results,
+html[data-theme="dark"] .algolia-docsearch-suggestion--category-header {
+  background-color: #163a3f !important;
 }
 
-html[data-theme='dark'] .ds-cursor .algolia-docsearch-suggestion--wrapper {
-    background: #041C20 !important;
+html[data-theme="light"] .ds-dropdown-menu:before,
+html[data-theme="light"] .algolia-docsearch-suggestion--no-results,
+html[data-theme="light"] .algolia-docsearch-suggestion--category-header {
+  background-color: #060d0e !important;
 }
 
-html[data-theme='light'] .ds-cursor .algolia-docsearch-suggestion--wrapper {
-    background: #EFFEFF !important;
+html[data-theme="dark"] .algolia-docsearch-suggestion--title {
+  color: var(--ifm-color-primary) !important;
 }
 
-html[data-theme='dark'] .algolia-docsearch-suggestion--highlight {
+html[data-theme="dark"] .ds-cursor .algolia-docsearch-suggestion--wrapper {
+  background: #041c20 !important;
+}
+
+html[data-theme="light"] .ds-cursor .algolia-docsearch-suggestion--wrapper {
+  background: #effeff !important;
+}
+
+html[data-theme="dark"] .algolia-docsearch-suggestion--highlight {
   background-color: rgba(10, 224, 240, 0.2) !important;
   color: var(--ifm-color-primary) !important;
 }
 
-html[data-theme='light'] .algolia-docsearch-suggestion--highlight {
+html[data-theme="light"] .algolia-docsearch-suggestion--highlight {
   background-color: rgba(10, 224, 240, 0.2) !important;
   color: #00cbe7 !important;
 }
 
-html[data-theme='dark'] .algolia-docsearch-suggestion--subcategory-column {
+html[data-theme="dark"] .algolia-docsearch-suggestion--subcategory-column {
   border-right-color: #005960 !important;
   color: #005960 !important;
 }
 
-html[data-theme='dark'] .algolia-autocomplete .ds-dropdown-menu [class^='ds-dataset-'] {
+html[data-theme="dark"]
+  .algolia-autocomplete
+  .ds-dropdown-menu
+  [class^="ds-dataset-"] {
   background: #005960 !important;
 }
 
-html[data-theme='dark'] .algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column:before,
-html[data-theme='dark'] .algolia-autocomplete .algolia-docsearch-suggestion--content:before {
-    background: #005960 !important;
+html[data-theme="dark"]
+  .algolia-autocomplete
+  .algolia-docsearch-suggestion--subcategory-column:before,
+html[data-theme="dark"]
+  .algolia-autocomplete
+  .algolia-docsearch-suggestion--content:before {
+  background: #005960 !important;
 }
 
-html[data-theme='dark'] .algolia-autocomplete .algolia-docsearch-suggestion--text {
-    color: #005960 !important;
+html[data-theme="dark"]
+  .algolia-autocomplete
+  .algolia-docsearch-suggestion--text {
+  color: #005960 !important;
 }
 
 .algolia-autocomplete .algolia-docsearch-suggestion {
   border-bottom-color: var(--ifm-color-primary) !important;
 }
-
-

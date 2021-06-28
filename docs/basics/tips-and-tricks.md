@@ -152,6 +152,10 @@ And enable this setting:
 set clipboard& clipboard^=unnamed,unnamedplus
 ```
 
+### VIM: Exit insert mode without ESC key
+
+Change CapsLock in Blink Settings to Control and press Ctrl(CapsLock) + [ to exit insert mode on iPad keyboards without ESC key.
+
 ### Emacs: Copy/Paste using OSC52
 
 To enable copy/paste on Emacs you need to install [osc52.el](https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/osc52.el) and add this to your config:
@@ -168,9 +172,5 @@ Using the Config > Keyboard > Custom Presses settings you can add new shortcuts.
 ### Emacs: Change ALT to Meta
 
 Change "Prss and send" to **None** and "As modifier" to **ESC** option in Config > Keyboard > ⌥ Option so you can use it as `Meta`. From now on `⌥ Option/Alt - x` will work as `Meta - x`.
-
-### VIM: Exit insert mode without ESC key
-
-Change CapsLock in Blink Settings to Control and press Ctrl(CapsLock) + [ to exit insert mode on iPad keyboards without ESC key.
 
 <div id="fyfk-widget"></div>
