@@ -86,5 +86,3 @@ Mosh has no concepts of SSH tunnels or bastion hosts but you can run a SSH tunne
 ## The Bleeding Edge of Mosh
 
 Blink has additional support for new Mosh features like TrueColor rendering and remote clipboard. Some of these features are not supported in older versions of Mosh versions that may be installed on your servers. If that's the case, you can uninstall Mosh via your package manager or compile it and install it from source. Please see this [link](https://mosh.org) for more information.
-
-<div id="fyfk-widget"></div>

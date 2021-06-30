@@ -45,5 +45,3 @@ That way you will have full keyboard access and spacebar working in Blink
 This issue appears mostly when Blink cannot find mosh-server on the device, meaning that the location is not one of the defaults in the path. To fix that do `which mosh-server` to get its current location. Then configure that location in Blink: `Settings` > `Hosts` > `Mosh` > `Command`.
 
 You can also test it from the command line by providing it to the `mosh --server=<path> <host>` command.
-
-<div id="fyfk-widget"></div>

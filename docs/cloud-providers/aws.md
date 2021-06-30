@@ -78,5 +78,3 @@ In the above example replace IP with the address of your EC2 instance. If you ch
 ## Conclusion
 
 AWS powers a large portion of the Internet, so launching an EC2 instance inside Amazon's powerful cloud puts your server in good company with leading web brands. Blink's flexible command-line tools, including SSH and mosh, make managing your Amazon cloud server a breeze.
-
-<div id="fyfk-widget"></div>

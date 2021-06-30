@@ -76,5 +76,3 @@ mosh -I your_key host
 ```
 
 In this example, `your_key` is the SSH key to use, and `host` is the host entry to use in the connection.
-
-<div id="fyfk-widget"></div>

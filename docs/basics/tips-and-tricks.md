@@ -172,5 +172,3 @@ Using the Config > Keyboard > Custom Presses settings you can add new shortcuts.
 ### Emacs: Change ALT to Meta
 
 Change "Prss and send" to **None** and "As modifier" to **ESC** option in Config > Keyboard > ⌥ Option so you can use it as `Meta`. From now on `⌥ Option/Alt - x` will work as `Meta - x`.
-
-<div id="fyfk-widget"></div>
