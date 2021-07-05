@@ -124,7 +124,7 @@ module.exports = {
             },
             {
               label: "Reddit",
-              href: "https://reddit.com/BlinkShell",
+              href: "https://reddit.com/r/BlinkShell",
             },
             {
               label: "Dev.to",
