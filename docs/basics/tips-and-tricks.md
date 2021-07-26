@@ -98,7 +98,7 @@ By switching off the "Same for both sides" option in Config > Keyboard > ⌥ Opt
 
 ### Inline Images
 
-Blink supports displaying images over SSH when using [iTerm2 imgact](https://iterm2.com/utilities/imgcat). Put it in local .bin folder ($HOME/.bin or any other in your %PATH) and use it as this:
+Blink supports displaying images over SSH when using [iTerm2 imgcat](https://iterm2.com/utilities/imgcat). Put it in local .bin folder ($HOME/.bin or any other in your %PATH) and use it as this:
 
 ```bash
 imgcat image.png
