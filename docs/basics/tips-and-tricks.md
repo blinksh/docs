@@ -158,11 +158,12 @@ Change CapsLock in Blink Settings to Control and press Ctrl(CapsLock) + [ to exi
 
 ### Emacs: Copy/Paste using OSC52
 
-To enable copy/paste on Emacs you need to install [osc52.el](https://chromium.googlesource.com/apps/libapps/+/master/hterm/etc/osc52.el) and add this to your config:
+To enable copy/paste on Emacs, you can install [clipetty](https://github.com/spudlyo/clipetty). See the GitHub repo for the complete documentation, but for basic configuration using [`use-package`](https://github.com/jwiegley/use-package), you can add this to your config:
 
 ```emacs
-(require 'osc52)
-(osc52-set-cut-function)')
+(use-package clipetty
+  :ensure t
+  :hook (after-init . global-clipetty-mode))
 ```
 
 ### Emacs: Custom Presses
