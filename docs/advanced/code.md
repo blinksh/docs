@@ -25,7 +25,7 @@ To set things up, first, run `code .`. Nothing much is possible until you instal
 ![img](code/code-general.png)
 
 ## Opening remote projects
-Remote development on Code could not be any easier thanks to Blink Shell's abilities. If you have already [configured your host](www.google.com), just type:
+Remote development on Code could not be any easier thanks to Blink Shell's abilities. If you have already [configured your host](basics/hosts.md), just type:
 
 ```
 code <host>:<path/to/project>
@@ -45,7 +45,7 @@ Blink Code can also connect to your instance of Code Server, offering the same p
 code gitpod.dev/asdfqwerzxcv
 ```
 
-Note there are iOS limitations on the domains we can access (we are working on that). We currently support domains for GitHub Codespaces, GitPod, and Code-Server. If your Code instance is accessed through a private IP, we suggest you [open a tunnel](advanced/advanced-ssh#tunnels) so access happens through localhost instead.
+Note there are iOS limitations on the domains we can access (we are working on that). We currently support domains for GitHub Codespaces, GitPod, and Code-Server. If your Code instance is accessed through a private IP, we suggest you [open a tunnel](advanced/advanced-ssh.md#tunnels) so access happens through localhost instead.
 
 **PRO TIP:** Blink will also capture `vscode://` routes, so it can fulfill the *Open in Desktop* functionality, for example, in GitHub Codespaces.
 
