@@ -1,6 +1,6 @@
 ---
 id: advanced-ssh
-sidebar_position: 2
+sidebar_position: 1
 sidebar_label: SSH
 slug: /advanced/advanced-ssh
 ---
@@ -17,9 +17,11 @@ And yet, you can spend years in the shell and not know about some of its most un
 
 ## Persistent SSH Connections with Blink
 
-Phones and tablets are tuned for extended battery life, but the power saving technology in iOS works against long-running SSH connections. Fortunately, Blink ships with a security feature that has the secondary effect of keeping your connections running longer. The `geo track` command available on Blink Shell will enable the location tracking feature in iOS to ensure Blink can maintain active SSH connections. If run as `geo lock`, additionally the location of your device will be "locked" and in case your device is moved, all your connections will be dropped. Rest assured, we don't use or store any of the location data from your device. The `geo` command bypasses the power saving system to ensure you remain connected while keeping your privacy intact.
+Phones and tablets are tuned for extended battery life, but the power saving technology in iOS works against long-running SSH connections. Fortunately, Blink ships with a security feature that has the secondary effect of keeping your connections running longer. The `geo track` command available on Blink Shell will enable the location tracking feature in iOS to ensure Blink can maintain active SSH connections. If run as `geo lock`, additionally the location of your device will be "locked" and in case your device is moved, all your connections will be dropped. Rest assured, we don't use or store any of the location data from your device. 
 
-## SSH Agent and Forwarding
+## SSH Agent and Agent Forwarding
+
+** Local Agent is less relevant now. Focus on Agent Forwarding. Idea is that having a key in a remote machine is potentially dangerous. More secure. **
 
 When stored securely, SSH keys provide strong security for your remote connections. SSH keys should be encrypted with a password to help guard against key theft. While this setup is incredibly secure, repeatedly entering passwords can be annoying. Fortunately, there's a solution - the SSH agent.
 
@@ -37,9 +39,7 @@ To learn more about the security implications of SSH agent forwarding, please se
 
 ## Tunnels
 
-VPNs are incredibly useful in a wide variety of ways, and with increasing privacy and censorship concerns, they're becoming a practical necessity. While not an exact replacement for VPN technology, SSH tunnels provide secure network routes to or from your local machine to a remote network.
-
-The simplest example is bringing a port from a remote system to your local machine. If you had a development server running a service on port `8080` that wasn't exposed to the Internet and wanted to access it, you could run this command:
+SSH tunnels provide secure network routes to or from your local machine to a remote network. The simplest example is bringing a port from a remote system to your local machine. If you had a development server running a service on port `8080` that wasn't exposed to the Internet and wanted to access it, you could run this command:
 
 ```bash
 ssh -L 8080:localhost:8080 host
@@ -47,19 +47,36 @@ ssh -L 8080:localhost:8080 host
 
 Replacing `host` with the remote hostname or IP. Once authenticated, a service listening on port `8080` on the remote machine will now be accesible as though it were on your local device. A connection to `localhost:8080` will be forwarded via the SSH tunnel to the remote computer.
 
+Blink Shell supports both LocalForward (-L) and RemoteForward (-R). You can also set up your tunnels inside the SSH Config for the Host. This way, all your tunnels will get started with the connection, without the need to explicitely pass them at the command line. 
+
+**PRO TIP:** Blink can also start the tunnels in the background, without starting an interactive shell. Check out the `-N` parameter for this purpose.
+
+
+## SOCKS
+
+VPNs are incredibly useful in a wide variety of ways, and with increasing privacy and censorship concerns, they're becoming a practical necessity. While not an exact replacement for VPN technology, Blink Shell provides a SOCKS5 proxy, so you can tunnel your web traffic through the remote machine. Like a VPN, this will allow you to browse the internet privately, or access restricted content, but also, access services that may be localized at the remote network.
+
+We have created a separate article about DynamicForward, so please [follow the link](advanced/socks.md) for more information.
+
 ## Jump/Bastion Hosts
 
 A jump host (sometimes referred to as a bastion host or server) is an intermediate SSH server that acts as a gateway to other networks. This setup is a common way to provide SSH access to a protected server (or group of servers) while allowing only one IP address (the jump host) access. This setup prevents other machines from accessing the protected server and ensures that connections first authenticate through the jump host.
 
-To facilitate this, SSH has a `ProxyCommand` option that allows you to specify the intermediate server:
+To facilitate this, SSH has a `ProxyJump` option that allows you to specify the intermediate server:
 
 ```bash
-ssh -o ProxyCommand="ssh -W %h:%p jumphost" host
+ssh -J jumphost host
 ```
 
 Where `jumphost` with the jump/bastion server and `host` with the remote host.
 
 SSH jump hosts eliminate the need for SSH agent forwarding, offering a more secure approach to connect to protected networks.
+
+Special cases may require a more exotic command through the JumpHost. Blink Shell also supports `ProxyCommand` for this purpose, either in configuration or in the Command Line:
+
+```bash
+ssh -o ProxyCommand="ssh -W %h:%p jumphost" host
+```
 
 ## Venture Forth with Your Advanced SSH Knowledge
 

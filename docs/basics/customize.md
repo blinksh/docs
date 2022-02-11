@@ -5,65 +5,85 @@ sidebar_label: Customize
 slug: /basics/customize
 ---
 
-# Customizing Blink Shell Appearance 
+# Customizing Blink Shell
+
+Customization is one of Blink touchstones. When starting development, we made sure we were able to customize everything even before we wrote a line of code. That’s how important it was for us.
+
+We know it is important for you too. Having a keyboard the way you want, is second nature. Themes that don’t hurt your eyes so you can use them to code all day. Or the Font that you feel most comfortable with, whether it is more condensed or extended.
+
+Let's walkthrough all the ways you can have Blink work for you. To get started, run ‘config’ into one of the terminals.
+
+# Keyboard
+
+Within Blink, you can customize from Blink Shortcuts like “Open terminals” or “Copy - Paste” to sequences and modifiers that are sent to a terminal. You can find all the keyboard configuration under the “Keyboard” settings.
+
+![img](customize/keyboard.png)
+
+## Blink Shortcuts
+
+You can fully control Blink with your keyboard. Great when you don’t want to distract from what you are doing. Sometimes terminal apps like Vim or Emacs use a big amount of keyboard sequences that may “collide” with Blink Shortcuts. That’s why we allow you to customize them.
+
+Start by opening the Blink Shortcuts section. There you can see the list of all shortcuts. To change one, just tap on it. Press the new keyboard sequence you would like to use, and Blink will automatically capture it.
+
+![img](customize/keyboardshortcuts.png)
+
+**Pro tip:** On the On-Screen keyboard, Blink also offers a Cmd key - it is the `⌘` symbol. So all the shortcuts that are available on the external keyboard, are also available in your device.
+
+## Custom Keyboards
+
+iOS and iPadOS can install custom software keyboards. Sometimes those are convenient to write on, but not very good for a terminal. You can disable those by just turning off the switch.
+
+## Modifiers
+
+Here is where Blink shows all its power. Modifiers are keys that when pressed in combination with others, they Modify the sequence being sent, for example, Ctrl-x or Ctrl-v. Usual hardware keyboard layouts aren’t very UNIX friendly. Keys like control are too far away and small, other keys like Opt-Alt-Meta may be too small.  iPad keyboards do not even have an Esc key!
+
+Within Blink you can configure other Modifier keys, like Caps, Cmd, etc… to replace Ctrl or Alt sequences. This is very common on Emacs where Ctrl or Esc are usually mapped to Caps and Alt.
+
+In the Modifiers section there is a list of Modifiers that can be adjusted. To configure one, just tap on it. Some keys are on both sides of the keyboard, like Ctrl, and Blink allows you to assign different modifiers or actions to each. With Blink you can also send a “keypress” instead of a modifier sequence, so for example, you can make Caps send Esc when pressed, but Ctrl when used together with other key.
+
+Here are some common configurations for specific users:
+
+**Pro tip:** On the On-Screen keyboard, Blink offers `Ctrl`, `Esc` and `Alt` modifiers too. You can read more about it at [Navigation](basics/navigation.md).
+
+![img](customize/modifiers.png)
+
+## Custom presses
+
+As we mentioned, there is no Esc on iPad keyboards. There are also no function keys. Some external keyboards also don’t have a very convenient placement of important keys like | or \ >. Blink to the rescue again. Within the Custom presses section you will be able to remap single key presses into other sequences.
+
+![img](customize/presses.png)
+
+# Appearance
 
 **Warning: All changes in this section will take effect in a new Blink Shell tabs/windows!**
 
-To open the configuration section, type `config` within Blink Shell or press `⌘-,`, and go to `Appearance`.
-
-![Settings](customize/Settings.png)
-
-In Appearance section, you can configure the following:
+Let's move on to `config` and go to `Appearance`. Blink ships with a good set of themes, so you can select one that is to your liking and easier on your eyes.
 
 ## Themes
 
-You can choose from basic themes that come bundled with Blink Shell or install one from our [themes gallery](https://github.com/blinksh/themes):
+Blink only ships a few themes, but opens the door to create and install yours. Make sure to visit our [themes gallery](https://github.com/blinksh/themes).
 
-- Go to `Settings` -> `Appeareance` -> `New Theme` -> Paste the raw URL to theme, and download it -> `Save` and select it from the themes list
-
-![Appearance](customize/Appearance.png)
+To install a theme go to `New Theme` -> Paste the raw URL to theme, and download it -> `Save` and select it from the themes list.
 
 More advanced users can create own themes, you can read more about it [here](/advanced/creating-fonts-and-themes#create-a-shell-theme).
 
+If you would like to remove a theme, just swipe left.
+
+![img](customize/appearance.png)
+
 ## Fonts
 
-Blink Shell comes bundled with most popular open source monospace fonts used in terminals.
-In addition we offer our beloved PragmataPro, and option for installing own fonts.
+Blink shows all the Monospaced fonts that are already installed on your device and it comes bundled with most popular open source monospace fonts used in terminals.
+
+By default, Blink uses our beloved Pragmata, an optimized font for shell and development with a lot of special characters. It also includes ligatures, so special characters have a special more pleasant appearance.
 
 ![Fonts](customize/Fonts.png)
 
-### Installing own fonts
-
-In iOS you can use your own fonts that are in the Open Type or True Type formats.
-
-One of the ways of doing that is by using [Fontcase](https://apps.apple.com/us/app/id1205074470?ls=1&mt=12&uo=4&pt=8934&at=10l4G7) application which is [open source](https://github.com/manolosavi/xFonts), and installs fonts using system profiles. Second one is by using applications like [Adobe Creative Cloud](https://apps.apple.com/us/app/adobe-creative-cloud/id852473028) that have huge library of fonts to chose from(but requires subscription), and installs them to `iOS Settings` > `General Settings` > `Fonts`.
-
-### Using Fontcase
-
-- Tap on the `Import` button in the top-left corner
-- Navigate and select fonts you want to install
-- You can manage fonts on the list, and remove them in necessary
-- Taping the `Install` button will open a web browser with a `Download Fonts` button
-- Click `Allow` for installation
-- Open the iOS `Settings`, and navigate to `General` > `Profiles` > `Downloaded Profile` > `Fontcase Installation`.
-- After tapping the button you’ll see a `Not Signed` highlighted in red
-- Tap on `Install` button
-- Enter your passcode, you will be warned that the profile is unsigned. Tap `Install`, then tap `Install` again
-
-Go to Fontcase [help](https://github.com/manolosavi/xFonts/blob/master/xFonts/Help.md) for more in-depth help.
-
-### Using Adobe Creative Cloud
-
-- Download the [Adobe Creative Cloud](https://apps.apple.com/us/app/adobe-creative-cloud/id852473028) app for iOS/iPadOS
-- Create an account, if you don’t have it already
-- Tap the `Fonts` tab in the bottom bar
-- Tap `Install Fonts` under one that you like, tap `Install` again
-
-That's it, you can now start using new fonts inside Blink.
-
-_Info: Limited free fonts are available without a subscription._
+As with themes, if you don’t find one to your liking, you can also install and use other fonts. There are two ways to do that. You can use an app like Fonts to install your font inside the system so it is available on every application.
 
 More advanced users can create own CSS files with fonts, you can read more about it [here](/advanced/creating-fonts-and-themes#create-a-font).
+
+If you would like to remove an installed font, just swipe left.
 
 ### More Options
 

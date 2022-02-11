@@ -21,9 +21,9 @@ To add a host, click the `+` sign. When you do, you’ll be prompted for the det
 
 ![img](hosts/create-access-host-image2.png)
 
-### Host
+### Alias
 
-This is the name of the host. Use this for easy identification in the lists of hosts. It does not necessarily have to match the hostname or IP address of the host.
+This is your alias for the host. Use this for easy identification in the lists of hosts. It does not necessarily have to match the hostname or IP address of the host.
 
 ### Hostname
 
@@ -45,6 +45,10 @@ If using password-based authentication, enter the password here. If you leave th
 
 To use public key encryption, select your key in this box. By default, the key named `id_rsa` will be used.
 
+### SSH Config
+
+This is very useful for parameters that are not found in the UI, like opening tunnels with LocalForward or forwarding the agent with ForwardAgent. Note that this configuration supersedes your .ssh/config file. For a full list of parameters, check out the [ssh config manual](https://linux.die.net/man/5/ssh_config).
+
 ### Mosh Parameters
 
 If you wish to use Mosh, you will have to supply additional parameters.
@@ -63,9 +67,11 @@ If you need to specify a UDP port for Mosh, please enter it here.
 
 #### Prediction
 
-![img](hosts/create-access-host-image3.png)
+Define Mosh's predictive model of the server's behavior. `Adaptive` will show predictions (as underscored characters) on slower links, and can also be `Always` or `Never` 
 
-When you are finished with the parameters tap Save.
+### Files.app
+
+Adding a Location will make it available inside the Files.app. Check our [Files.app documentation](advanced/files-app.md).
 
 ## Changing or Deleting Host
 
@@ -75,18 +81,14 @@ If you wish to change a host, tap on it in the hosts lists. Alternatively, to de
 
 ## Using Hosts
 
-Once you have saved a host, you use the name you provided in the Blink Shell console:
+Once you have saved a host, you use connect to it through the given alias:
 
 ```bash
-mosh plankton
+mosh mbp
 ```
-
-To use the host named `plankton` use the hostname that you specified in your command.
-
-![img](hosts/create-access-host-image5.png)
 
 Command line parameters always have preference over configuration. You can redefine a parameter by specifying it on the command line. For example, to use a different user (in this case, `root`), specify:
 
 ```bash
-mosh root@plankton
+mosh root@mbp
 ```

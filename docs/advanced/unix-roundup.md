@@ -1,6 +1,6 @@
 ---
 id: unix-roundup
-sidebar_position: 3
+sidebar_position: 5
 sidebar_label: UNIX Roundup
 slug: /advanced/unix-roundup
 ---
@@ -66,21 +66,20 @@ Blink Shell provides far more utilities and here's a list: `awk`, `cat`, `chflag
 
 ## Remote Transfer Tools
 
-Blink Shell offers a lot of useful local functionality but Blink specializes in enabling remote connections and that strength is leveraged in our command line tools. Want to upload a LaTeX file or a generated PDF to your server or even download a file from a Linux machine into iCloud? We have you covered with `scp`.
+Blink Shell offers a lot of useful local functionality but Blink specializes in enabling remote connections and that strength is leveraged in our command line tools. Want to upload a LaTeX file or a generated PDF to your server or even download a file from a Linux machine into iCloud? We have you covered with `sftp` and `scp`.
 
 ```bash
 scp file user@remotehost:remotepath
+sftp user@remotehost:remotepath
 ```
 
-In this example, we will transfer a file named `file` to the server `remotehost` with the username of `user` to place it in the `remotepath` folder. `scp` accepts wildcards, allowing the transfer of multiple files at once, but you can also `tar` the files for a better transfer experience.
+In this example, we will transfer a file named `file` to the server `remotehost` with the username of `user` to place it in the `remotepath` folder. `scp` accepts wildcards, allowing the transfer of multiple files at once, but you can also `tar` the files for a better transfer experience. Blink will 
 
-Some servers only support SFTP, so it is also bundled into Blink Shell. To connect to a server simply run:
+Although the `sftp` command in UNIX environments is interactive, Blink Shell uses scp and sftp interchangeably. If you wish to start an interactive session, we have a better solution with our [Files.app integration](advanced/files-app.md). This is a fantastic way to browse and open files in a remote Host.
 
-```bash
-sftp user@remotehost
-```
+We heavily recommend using these commands for large uploads and downloads of full directory structures, where the performance is way better than the Files.app, and the commands will offer more visibility and control of the progress 
 
-Once connected, you can run FTP commands like `cd`, `get` and `put`.
+**PRO TIP:** Blink Shell has an additional flag `--update`, that will synchronize the contents of source and destination based on timestamps. This is specially useful if you need to keep a folder in sync with the remote. The result is similar to `rsync`, although `rsync` has a lot more options and complexity.
 
 ## Network Diagnostics
 

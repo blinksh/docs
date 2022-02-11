@@ -11,7 +11,7 @@ slug: /basics/commands
 
 This guide will explain the various commands available to you inside Blink.
 
-Each command has parameters, called arguments, that adjust the operation and behavior of that command. Any argument passed to a command will override its operation, even if those arguments conflict with any pre-existing configuration.
+Each command has parameters, called arguments, that adjust the operation and behavior of that command. Any argument passed to a command will override its operation, even if those arguments conflict with any pre-existing configuration. For a more in-depth look at other commnads, please read our [UNIX Roundup](advanced/unix-roundup.md).
 
 ## In-App Help
 
@@ -21,7 +21,7 @@ If you type `help` in the Blink Shell terminal you’ll see an overview of the b
 
 ### Config
 
-If you type `config`, you’ll be presented with the configuration screen. From here you can adjust the application’s settings.
+If you type `config` or `⌘+,`, you’ll be presented with the configuration screen. From here you can adjust the application’s settings.
 
 ### SSH
 
@@ -31,9 +31,7 @@ The `ssh` command will allow you to start a secure remote shell to another devic
 ssh user@host
 ```
 
-Where `user` is the username you wish to use, and `host` is the hostname (or IP address) of the remote machine to connect to. If you type `ssh` by itself you’ll see a simple usage guide that explains the other optional parameters:
-
-![img](overview/command-blink-image2.png)
+Where `user` is the username you wish to use, and `host` is the hostname (or IP address) of the remote machine to connect to. If you type `ssh --help` you’ll see a simple usage guide that explains the other optional parameters:
 
 The most common parameters you may need to specify are the port, identify file, and adjust the verbosity to debug connection issues.
 
@@ -53,11 +51,9 @@ Mosh has its own detailed set of arguments, however, for most common uses you’
 mosh user@host
 ```
 
-If you type `mosh` without any arguments you will see a full list of available options:
+If you type `mosh --help` without any arguments you will see a full list of available options.
 
-![img](overview/command-blink-image3.png)
-
-You can configure most Mosh options, including the startup command, in your host configuration. For more information, please see [“Create and Access Hosts Using Blink Shell”](../basics/hosts.md).
+You can configure most Mosh options, including the startup command, in your host configuration. For more information, please see [“Create and Access Hosts Using Blink Shell”](basics/hosts.md).
 
 An example of using Mosh in Blink Shell would be:
 
@@ -93,6 +89,6 @@ This command is a simple wrapper around the ssh command to facilitate easy trans
 
 **Reverse Search.** Typing the same commands is repetitive and sometimes on a cramped phone keyboard the experience may not be the best. With `Ctrl ^-r` you can access your command history menu. Start typing parts of the command and Blink Shell will match and suggest as you go.
 
-**SCP and SFTP.** Blink gives you the usual basic commands to copy and move files between your system and the remote. For example, you can type `scp file.txt user@remotehost:` to copy the `file.txt` on your local machine to the remote host. You can find more information about this command online.
+**SCP and SFTP.** Blink gives you the usual basic commands to copy and move files between your system and the remote. For example, you can type `scp file.txt user@remotehost:` to copy the `file.txt` on your local machine to the remote host. You can find a more in-depth explanation [here](advanced/unix-roundup.md#remote-transfer-tools).
 
-**Basic UNIX toolbox.** Within Blink, we have embedded a basic UNIX toolbox. You will find some network operations like `ping` or `nc`, file operations like `mkdir`, `grep`, and even the small “popular” editor `ed`.
+**Basic UNIX toolbox.** Within Blink, we have embedded a basic UNIX toolbox. You will find some network operations like `ping` or `nc`, file operations like `mkdir`, `grep`, and even the small “popular” editor `ed`.  You can find a more in-depth look at all the commnads [here](advanced/unix-roundup.md).

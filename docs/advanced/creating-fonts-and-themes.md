@@ -1,6 +1,6 @@
 ---
 id: creating-fonts-and-themes
-sidebar_position: 4
+sidebar_position: 7
 sidebar_label: Creating Fonts & Themes
 slug: /advanced/creating-fonts-and-themes
 ---

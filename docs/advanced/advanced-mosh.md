@@ -1,6 +1,6 @@
 ---
 id: advanced-mosh
-sidebar_position: 1
+sidebar_position: 2
 sidebar_label: Mosh
 slug: /advanced/advanced-mosh
 ---
