@@ -25,7 +25,7 @@ To set things up, first, run `code .`. Nothing much is possible until you instal
 ![img](code/code-general.png)
 
 ## Opening remote projects
-Remote development on Code could not be any easier thanks to Blink Shell's abilities. If you have already [configured your host](basics/hosts.md), just type:
+Remote development on Code could not be any easier thanks to Blink Shell's abilities. If you have already [configured your host](basics/hosts.md) and installed the blink-fs extension on the target, just type:
 
 ```
 code <host>:<path/to/project>
