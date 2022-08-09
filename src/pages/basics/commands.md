@@ -4,7 +4,7 @@
 
 This guide will explain the various commands available to you inside Blink.
 
-Each command has parameters, called arguments, that adjust the operation and behavior of that command. Any argument passed to a command will override its operation, even if those arguments conflict with any pre-existing configuration. For a more in-depth look at other commnads, please read our [UNIX Roundup](advanced/unix-roundup.md).
+Each command has parameters, called arguments, that adjust the operation and behavior of that command. Any argument passed to a command will override its operation, even if those arguments conflict with any pre-existing configuration. For a more in-depth look at other commands, please read our [UNIX Roundup](advanced/unix-roundup.md).
 
 ## In-App Help
 
