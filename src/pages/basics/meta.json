@@ -1,0 +1,9 @@
+{
+  "navigation": "Navigation",
+  "hosts": "Hosts",
+  "ssh-keys": "SSH Keys",
+  "notifications": "Notifications",
+  "commands": "Commands",
+  "customize": "Customize",
+  "tips-and-tricks": "Tips & Tricks"
+}
