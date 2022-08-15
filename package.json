@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "next": "latest",
-    "nextra": "^2.0.0-beta.16",
+    "nextra": "2.0.0-beta.16",
     "nextra-theme-blinkshell": "^2.0.0-beta.17",
     "prism-react-renderer": "latest",
     "prismjs": "latest",

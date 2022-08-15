@@ -1,4 +1,4 @@
-import Callout from 'nextra-theme-blinkshell/callout'
+import { Callout } from 'nextra-theme-blinkshell'
 
 # Files.app integration
 
