@@ -1,4 +1,4 @@
-import Callout from 'nextra-theme-blinkshell/callout'
+import { Callout } from 'nextra-theme-blinkshell'
 
 # Using SSH Keys with Blink Shell for iOS
 
