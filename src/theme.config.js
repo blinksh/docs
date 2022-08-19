@@ -28,7 +28,7 @@ const BlinkLogo = () => (
   </svg>
 );
 /**
- * @type {import('blsh-theme-docs').DocsThemeConfig}
+ * @type {import('nextra-theme-blinkshell').DocsThemeConfig}
  */
 export default {
   projectLink: "https://github.com/blinksh/docs",
@@ -46,7 +46,7 @@ export default {
       </span>
     </>
   ),
-  head: (
+  head: () => (
     <>
       <meta name="msapplication-TileColor" content="#ffffff" />
       <meta name="theme-color" content="#ffffff" />
