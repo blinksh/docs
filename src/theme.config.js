@@ -32,7 +32,7 @@ const BlinkLogo = () => (
  */
 export default {
   projectLink: "https://github.com/blinksh/docs",
-  docsRepositoryBase: "https://github.com/blinksh/docs/blob/master",
+  docsRepositoryBase: "https://github.com/blinksh/docs/blob/master/src/pages",
   projectChatLink: "https://discord.gg/ZTtMfvK",
   titleSuffix: " – Blink Shell",
   logo: (

@@ -5,7 +5,7 @@ VSCode is a very powerful code editor which has become the tool of choice for a 
 - Work on local projects, or edit remote files as if they were in your device, thanks to Blink Files.
 - First-class iOS experience, with software and hardware keyboard, and the full edge-to-edge experience without interruptions that everyone loves from Blink.
 
-# Starting Blink Code
+## Starting Blink Code
 
 ```
 code <path_or_url>
