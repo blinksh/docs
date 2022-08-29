@@ -56,7 +56,7 @@ ssh user@1.2.3.4
 
 In this example, an SSH connection is established with the username user to the remote IP `1.2.3.4`. You may also specify a hostname instead of an IP address. Since no key was specified, the default key `id_rsa` will be used.
 
-You can add pre-defined host keys in the [Hosts section](basics/hosts#Keys) of the application. 
+You can add pre-defined host keys in the [Hosts section](basics/hosts.md#Keys) of the application. 
 
 Sometimes it is convenient to manually enforce a key to be used. In the below example, the key `your_key` is used to connect to the pre-defined host `myhost`. 
 

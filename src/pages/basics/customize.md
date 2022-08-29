@@ -36,7 +36,7 @@ In the Modifiers section there is a list of Modifiers that can be adjusted. To c
 
 Here are some common configurations for specific users:
 
-**Pro tip:** On the On-Screen keyboard, Blink offers `Ctrl`, `Esc` and `Alt` modifiers too. You can read more about it at [Navigation](basics/navigation).
+**Pro tip:** On the On-Screen keyboard, Blink offers `Ctrl`, `Esc` and `Alt` modifiers too. You can read more about it at [Navigation](basics/navigation.md).
 
 ![img](./customize/modifiers.png)
 

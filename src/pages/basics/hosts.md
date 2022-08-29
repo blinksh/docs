@@ -64,7 +64,7 @@ Define Mosh's predictive model of the server's behavior. `Adaptive` will show pr
 
 ### Files.app
 
-Adding a Location will make it available inside the Files.app. Check our [Files.app documentation](advanced/files-app).
+Adding a Location will make it available inside the Files.app. Check our [Files.app documentation](advanced/files-app.md).
 
 ## Changing or Deleting Host
 
