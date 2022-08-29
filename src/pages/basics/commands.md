@@ -4,7 +4,7 @@
 
 This guide will explain the various commands available to you inside Blink.
 
-Each command has parameters, called arguments, that adjust the operation and behavior of that command. Any argument passed to a command will override its operation, even if those arguments conflict with any pre-existing configuration. For a more in-depth look at other commands, please read our [UNIX Roundup](advanced/unix-roundup.md).
+Each command has parameters, called arguments, that adjust the operation and behavior of that command. Any argument passed to a command will override its operation, even if those arguments conflict with any pre-existing configuration. For a more in-depth look at other commands, please read our [UNIX Roundup](advanced/unix-roundup).
 
 ## In-App Help
 
@@ -46,7 +46,7 @@ mosh user@host
 
 If you type `mosh --help` without any arguments you will see a full list of available options.
 
-You can configure most Mosh options, including the startup command, in your host configuration. For more information, please see [“Create and Access Hosts Using Blink Shell”](basics/hosts.md).
+You can configure most Mosh options, including the startup command, in your host configuration. For more information, please see [“Create and Access Hosts Using Blink Shell”](basics/hosts).
 
 An example of using Mosh in Blink Shell would be:
 
@@ -82,6 +82,6 @@ This command is a simple wrapper around the ssh command to facilitate easy trans
 
 **Reverse Search.** Typing the same commands is repetitive and sometimes on a cramped phone keyboard the experience may not be the best. With `Ctrl ^-r` you can access your command history menu. Start typing parts of the command and Blink Shell will match and suggest as you go.
 
-**SCP and SFTP.** Blink gives you the usual basic commands to copy and move files between your system and the remote. For example, you can type `scp file.txt user@remotehost:` to copy the `file.txt` on your local machine to the remote host. You can find a more in-depth explanation [here](advanced/unix-roundup.md#remote-transfer-tools).
+**SCP and SFTP.** Blink gives you the usual basic commands to copy and move files between your system and the remote. For example, you can type `scp file.txt user@remotehost:` to copy the `file.txt` on your local machine to the remote host. You can find a more in-depth explanation [here](advanced/unix-roundup#remote-transfer-tools).
 
-**Basic UNIX toolbox.** Within Blink, we have embedded a basic UNIX toolbox. You will find some network operations like `ping` or `nc`, file operations like `mkdir`, `grep`, and even the small “popular” editor `ed`.  You can find a more in-depth look at all the commnads [here](advanced/unix-roundup.md).
+**Basic UNIX toolbox.** Within Blink, we have embedded a basic UNIX toolbox. You will find some network operations like `ping` or `nc`, file operations like `mkdir`, `grep`, and even the small “popular” editor `ed`.  You can find a more in-depth look at all the commnads [here](advanced/unix-roundup).

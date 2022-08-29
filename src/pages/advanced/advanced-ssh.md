@@ -27,7 +27,7 @@ Blink's agent is integrated into the system, so it does not require running a se
 
 You can load specific keys at any time by specifying the filename with `ssh-add KEY_FILE`. To see which keys the agent holds, run `ssh-add -l`. To remove a key, use the `-d' flag. Note you can add keys at any time before or after you have forwarded the agent.
 
-To enable SSH agent forwarding, connect with `ssh -A` option, or set `ForwardAgent` to `YES` on your [SSH Config](basics/hosts.md#ssh-config). This securely makes the keys available to the remote machine. Don't worry - the SSH keys are not copied or exported to the remote server in any way, the agent only accepts signature petitions, and it will only remain open for the duration of that specific SSH connection.
+To enable SSH agent forwarding, connect with `ssh -A` option, or set `ForwardAgent` to `YES` on your [SSH Config](basics/hosts#ssh-config). This securely makes the keys available to the remote machine. Don't worry - the SSH keys are not copied or exported to the remote server in any way, the agent only accepts signature petitions, and it will only remain open for the duration of that specific SSH connection.
 
 Even though SSH agent forwarding has numerous safeguards in place, an application running on the remote server can still use your key for unintended or possibly malicious purposes. To help mitigate this risk, we recommend using separate, single-purpose keys for SSH agent forwarding with limited exposure. For example, it is typical - but dangerous - to generate a single default key and use it to log in to servers or services like GitHub. Instead, create single-purpose keys that will limit the exposure: in our GitHub case, create a GitHub key.
 
@@ -51,7 +51,7 @@ Blink Shell supports both LocalForward (-L) and RemoteForward (-R). You can also
 
 VPNs are incredibly useful in a wide variety of ways, and with increasing privacy and censorship concerns, they're becoming a practical necessity. While not an exact replacement for VPN technology, Blink Shell provides a SOCKS5 proxy, so you can tunnel your web traffic through the remote machine. Like a VPN, this will allow you to browse the internet privately, or access restricted content, but also, access services that may be localized at the remote network.
 
-We have created a separate article about DynamicForward, so please [follow the link](advanced/socks.md) for more information.
+We have created a separate article about DynamicForward, so please [follow the link](advanced/socks) for more information.
 
 ## Jump/Bastion Hosts
 

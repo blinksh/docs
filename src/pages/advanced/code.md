@@ -18,7 +18,7 @@ To set things up, first, run `code .`. Nothing much is possible until you instal
 ![img](./code/code-general.png)
 
 ## Opening remote projects
-Remote development on Code could not be any easier thanks to Blink Shell's abilities. If you have already [configured your host](basics/hosts.md) and installed the blink-fs extension on the target, just type:
+Remote development on Code could not be any easier thanks to Blink Shell's abilities. If you have already [configured your host](basics/hosts) and installed the blink-fs extension on the target, just type:
 
 ```
 code <host>:<path/to/project>
@@ -26,7 +26,7 @@ code <host>:<path/to/project>
 
 Please make sure the host has all the authentication information in settings (like passwords), as to work, the connection must be non-interactive. You can check out the logs by doing `cat .blink/blinkCode.log` to identify issues.
 
-If you have enabled [Files.app integration](advanced/files-app.md) for the host, there is an even easier way to launch code. Just long-press the project directory or file, and tap `Code`!
+If you have enabled [Files.app integration](advanced/files-app) for the host, there is an even easier way to launch code. Just long-press the project directory or file, and tap `Code`!
 
 ![img](./code/code-filesapp.png)
 
@@ -38,7 +38,7 @@ Blink Code can also connect to your instance of Code Server, offering the same p
 code gitpod.dev/asdfqwerzxcv
 ```
 
-Note there are iOS limitations on the domains we can access (we are working on that). We currently support domains for GitHub Codespaces, GitPod, and Code-Server. If your Code instance is accessed through a private IP, we suggest you [open a tunnel](advanced/advanced-ssh.md#tunnels) so access happens through localhost instead.
+Note there are iOS limitations on the domains we can access (we are working on that). We currently support domains for GitHub Codespaces, GitPod, and Code-Server. If your Code instance is accessed through a private IP, we suggest you [open a tunnel](advanced/advanced-ssh#tunnels) so access happens through localhost instead.
 
 **PRO TIP:** Blink will also capture `vscode://` routes, so it can fulfill the *Open in Desktop* functionality, for example, in GitHub Codespaces.
 
@@ -59,4 +59,4 @@ If you wish to explore VSCode in more depth, documentation abounds on how it wor
 Blink Code offers the same on-screen keyboard as the terminal. When you play with it, please notice that special key modifiers like `Ctrl`, `Cmd` and `Meta` are integrated inside Blink Code too. Try it opening the Command Palette using `Cmd-m`. We promise this will take your experience to the next level! 
 
 ## Keyboard Shortcuts
-Blink Shell makes heavy use of keyboard shortcuts for navigation. Some of these may suppress VSCode keyboard shortcuts that you may deem necessary for your workflow. If so, you can easily reconfigure any by following [Blink Shortcuts](basics/customize.md#blink-shortcuts).
+Blink Shell makes heavy use of keyboard shortcuts for navigation. Some of these may suppress VSCode keyboard shortcuts that you may deem necessary for your workflow. If so, you can easily reconfigure any by following [Blink Shortcuts](basics/customize#blink-shortcuts).
