@@ -13,12 +13,12 @@ code <path_or_url>
 
 Blink Code takes a single parameter. If it is a path, it can be local or remote following the same format as SFTP/SCP commands.
 
-To set things up, first, run `code .`. Nothing much is possible until you install the blink-fs extension. Right after installation, this will connect the Code instance to the Blink File System. The navigation sidebar will show the file hierarchy, opening individual files for editing and manipulation.
+To launch Code and begin initial setup, first, run `code .`. Once it has launched, you will need to install the [blink-fs](https://marketplace.visualstudio.com/items?itemName=BlinkShellInc.blink-fs) extension. Right after installation, this will connect the Code instance to the Blink File System. The navigation sidebar will show the file hierarchy, opening individual files for editing and manipulation.
 
 ![img](./code/code-general.png)
 
 ## Opening remote projects
-Remote development on Code could not be any easier thanks to Blink Shell's abilities. If you have already [configured your host](/basics/hosts) and installed the blink-fs extension on the target, just type:
+Remote development on Code could not be any easier thanks to Blink Shell's abilities. If you have already [configured your host](/basics/hosts) and installed the [blink-fs](https://marketplace.visualstudio.com/items?itemName=BlinkShellInc.blink-fs) extension on the target, just type:
 
 ```
 code <host>:<path/to/project>
