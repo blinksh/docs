@@ -1,4 +1,5 @@
 import * as React from "react";
+import Script from "next/script";
 
 const BlinkLogo = () => (
   <svg
@@ -101,6 +102,20 @@ export default {
         href="/favicon-16x16.png"
       />
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+      <Script
+	  src="https://www.googletagmanager.com/gtag/js?id=UA-84834352-1"
+	  strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+	  {`
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){window.dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-84834352-1');
+	`}
+      </Script>
+ 
     </>
   ),
   search: true,
