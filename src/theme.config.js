@@ -102,11 +102,11 @@ export default {
         href="/favicon-16x16.png"
       />
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-      <Script
+      <script
 	  src="https://www.googletagmanager.com/gtag/js?id=UA-84834352-1"
 	  strategy="afterInteractive"
       />
-      <Script id="google-analytics" strategy="afterInteractive">
+      <script id="google-analytics" strategy="afterInteractive">
 	  {`
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){window.dataLayer.push(arguments);}
@@ -114,7 +114,7 @@ export default {
 
 	  gtag('config', 'UA-84834352-1');
 	`}
-      </Script>
+      </script>
  
     </>
   ),
