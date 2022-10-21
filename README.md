@@ -11,3 +11,4 @@ Build using [Nextra 2.0](https://github.com/shuding/nextra).
 - [Discord](https://discord.gg/ZTtMfvK)
 - [Twitter](https://twitter.com/blinkshell)
 - [Reddit](https://reddit.com/r/BlinkShell)
+- [GH Discussions](http://github.com/blinksh/blink/discussions)
