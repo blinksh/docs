@@ -5,7 +5,7 @@ import { Callout } from 'nextra-theme-blinkshell'
 ## General Questions
 
 ### How to apply for a student license?
-Just send us an e-mail from your university account to [hello@blink.sh](mailto:hello@blink.sh).
+Starting on 2022, Blink will offer Student licenses during the Back To School period, from September 1st until November 1st. The rest of the year, you are welcome to join us in our [Community Edition.](https://community.blink.sh)
 
 ### Does Blink Shell work on all Apple devices?
 We support iPhone and iPad, and the newest Mac's with M1 chip.
