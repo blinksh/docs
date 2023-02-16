@@ -26,7 +26,7 @@ root ➜ ~ $
 ```
 > Blink Build provides a totally new and private Virtual Machine in the Cloud for your usage when you start to work. And when you are done, it will automatically shut it down. During beta testing, Blink Build will only support one Machine size.
 
-> 👍 Blink Build uses WireGuard to connect to the remote machine under the hood. This way, only your authorized devices can connect to the remote without dealing with authentication keys.
+> 👍 Blink Build uses WireGuard® to connect to the remote machine under the hood. This way, only your authorized devices can connect to the remote without dealing with authentication keys.
 
 ## Make yourself at $HOME
 
