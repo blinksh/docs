@@ -84,4 +84,4 @@ This command is a simple wrapper around the ssh command to facilitate easy trans
 
 **SCP and SFTP.** Blink gives you the usual basic commands to copy and move files between your system and the remote. For example, you can type `scp file.txt user@remotehost:` to copy the `file.txt` on your local machine to the remote host. You can find a more in-depth explanation [here](/advanced/unix-roundup#remote-transfer-tools).
 
-**Basic UNIX toolbox.** Within Blink, we have embedded a basic UNIX toolbox. You will find some network operations like `ping` or `nc`, file operations like `mkdir`, `grep`, and even the small “popular” editor `ed`.  You can find a more in-depth look at all the commnads [here](/advanced/unix-roundup).
+**Basic UNIX toolbox.** Within Blink, we have embedded a basic UNIX toolbox. You will find some network operations like `ping` or `nc`, file operations like `mkdir`, `grep`, and even the small “popular” editor `ed`.  You can find a more in-depth look at all the commands [here](/advanced/unix-roundup).

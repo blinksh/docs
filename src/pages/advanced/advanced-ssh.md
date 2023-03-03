@@ -25,7 +25,7 @@ Installing private keys on untrusted hosts is a security risk, but some users st
 
 Blink's agent is integrated into the system, so it does not require running a separate application.
 
-You can load specific keys at any time by specifying the filename with `ssh-add KEY_FILE`. To see which keys the agent holds, run `ssh-add -l`. To remove a key, use the `-d` flag. Note you can add keys at any time before or after you have forwarded the agent.
+You can load specific keys at any time by specifying the filename with `ssh-add KEY_NAME`. To see which keys the agent holds, run `ssh-add -l`. To remove a key, use the `-d` flag. Note you can add keys at any time before or after you have forwarded the agent.
 
 To enable SSH agent forwarding, connect with `ssh -A` option, or set `ForwardAgent` to `YES` on your [SSH Config](/basics/hosts#ssh-config). This securely makes the keys available to the remote machine. Don't worry - the SSH keys are not copied or exported to the remote server in any way, the agent only accepts signature petitions, and it will only remain open for the duration of that specific SSH connection.
 

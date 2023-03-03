@@ -102,6 +102,7 @@ export default {
         href="/favicon-16x16.png"
       />
       <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+      <meta name="apple-itunes-app" content="app-id=1594898306" />
       <script
 	  src="https://www.googletagmanager.com/gtag/js?id=UA-84834352-1"
 	  strategy="afterInteractive"
