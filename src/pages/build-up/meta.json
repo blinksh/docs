@@ -1,3 +1,6 @@
 {
-    "nextjs": "Next.js"
+    "go": "Go",
+    "nextjs": "Next.js",
+    "python_flask": "Python + Flask",
+    "rust": "Rust"
 }

@@ -1,4 +1,4 @@
-## Starting your Next.js project
+# Starting your Next.js project
 
 The pre-installed Hacker Tools in Build come with a Node runtime, so it is a great option to get started:
 

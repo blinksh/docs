@@ -3,11 +3,11 @@
 Blink Build creates remote runtimes that can be accessed on all your devices. You can use Build in your day-to-day workflows whether you need to do development, DevOps, machine learning, or just play around with new tooling.
 
 
-## Sign Up
+### Sign Up
 
 Build is currently in open Beta for Blink Plus users. Before starting, you need to Sign Up for Blink Build inside `config`, `Build`. Setup is very straightforward, and to ensure the best performance, make sure to select the region closest to you.
 
-## First Start
+### First Start
 
 We are ready to start our first Build Runtime, the Build Hacker Tools. This runtime ships with the most common versions of Node, Python, Rust, Go, C/C++,  and several tools and editors like emacs, helix, mc, etc…
 
@@ -28,7 +28,7 @@ root ➜ ~ $
 
 > 👍 Blink Build uses WireGuard® to connect to the remote machine under the hood. This way, only your authorized devices can connect to the remote without dealing with authentication keys.
 
-## Make yourself at $HOME
+### Make yourself at $HOME
 
 You will notice that your home folder already has some Dotfiles.
 
@@ -40,29 +40,25 @@ By default, your Disk is created with a set of Dotfiles to give you a few nice-t
 As your Disk persists between sessions, it is the perfect place to start cloning repositories or installing your personalized dotfiles and secure keys.
 > When keeping Secure Tokens like SSH Keys or GitHub keys in your Disk, we recommend encrypting them for enhanced security. See [Notes on Security]()
 
-## Building up
+### Building up
 
 To get to know more about how to start running your workflows with Blink Build, use one of our Build up Quickstarts:
 
-Build up [Next.js](/build-up/nextjs).
+Build up [Next.js environments](/build-up/nextjs).
 
-Build up Python
+Work on [Python + Flask projects](/build-up/python_flask).
 
-Build up Ruby
+Build up [Rust environments](/build-up/rust)
 
-Build up Rust
+Build up [Go environments](/build-up/go)
 
-Build up Go
+Use [VS Code Server as your editor](/build-up/code_server)
 
-Build up PHP
+Build up …. 
 
-Build up Jupyter
+Please [let us know](https://github.com/blinksh/blink/discussions) other tasks or environments you may want to help you with. We will continue offering more guides. Most of the developer tools are already included in Hacker Tools so you can get started in minutes. And because Using Build is no different than any other local computer, you can follow online tutorials without needing any specialized knowledge.
 
-Build up code-server
-
-Build up …
-
-## Shutting down
+### Shutting down
 
 Blink Build will auto shut down your environment within one hour after you stop using it. We monitor the machine's activity by checking if you are still interacting with your Mosh shell sessions or tunnels. Note that commands executing in the background without an active Mosh shell or traffic on your tunnels will be eventually terminated with the machine.
 
@@ -72,7 +68,7 @@ If you wish to shut down everything at this very moment, you can do so with:
 blink> build machine stop
 ```
 
-## A note on security
+### A note on security
 
 - Build machines are unique per user and terminated after shutting them down. This means your data or runtimes are never in the same machine as other users. You can see your assigned IP and machine information by running `build machine status`.
 - Build stores your disks safely in persistent object storage using **256-bit AES-XTS full-disk encryption**. For extra security, we recommend sensitive information like private keys or secure tokens to be encrypted on a case-by-case basis.
