@@ -1,6 +1,8 @@
 {
+    "code_server": "VS Code Server",
     "go": "Go",
     "nextjs": "Next.js",
     "python_flask": "Python + Flask",
+    "rails": "Ruby on Rails",
     "rust": "Rust"
 }
