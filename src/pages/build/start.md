@@ -33,11 +33,15 @@ root ➜ ~ $
 You will notice that your home folder already has some Dotfiles.
 
 ```bash
-root ➜ ~ $ ls
+root ➜ ~ $ ls -alh
 ```
 On the first start, Blink Build also creates a Disk for your usage that will persist between sessions.
 By default, your Disk is created with a set of Dotfiles to give you a few nice-to-haves, like a prettified Bash shell or some optimized Tmux defaults.
+
 As your Disk persists between sessions, it is the perfect place to start cloning repositories or installing your personalized dotfiles and secure keys.
+
+To learn more about storage in Blink Build, check out our [Storage and Cloud Disk](/build/cloud_disk) guide.
+
 > When keeping Secure Tokens like SSH Keys or GitHub keys in your Disk, we recommend encrypting them for enhanced security. See [Notes on Security]()
 
 ### Building up
@@ -68,7 +72,7 @@ If you wish to shut down everything at this very moment, you can do so with:
 blink> build machine stop
 ```
 
-### A note on security
+### Notes on security
 
 - Build machines are unique per user and terminated after shutting them down. This means your data or runtimes are never in the same machine as other users. You can see your assigned IP and machine information by running `build machine status`.
 - Build stores your disks safely in persistent object storage using **256-bit AES-XTS full-disk encryption**. For extra security, we recommend sensitive information like private keys or secure tokens to be encrypted on a case-by-case basis.
