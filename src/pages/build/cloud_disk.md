@@ -67,7 +67,7 @@ root ➜ ~ $ cat ~/.ssh/id_ecdsa.pub
 
 Advanced users may want to keep their Dotfiles in a repository so they can replicate their configuration easily on other machines, to collaborate with others, or to experiment with different settings without worrying about losing previous customizations.
 
-Blink Build offers a repository for Dotfiles outside the box that you can manipulate with the special `config` command . After creating files or making updates to your dots, you can manipulate it like a git repository:
+Blink Build offers a [repository](https://github.com/blinksh/build-dotfiles) for Dotfiles outside the box that you can manipulate with the special `config` command . After creating files or making updates to your dots, you can manipulate it like a git repository:
 ```bash
 config status
 config add .emacs
