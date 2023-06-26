@@ -81,7 +81,7 @@ For the external display to work, Blink needs to be an active window on the iPad
 From iPad OS 13, we have multiple windows support inside Blink, and each window can have infinite tabs. 
 ![Blink Shell Windows](./tips-and-tricks/windows.png)
 
-You can also move windows between iPad and External Display with `Shift + CMD + O` or change focus to it using `CMD + O`.
+You can also move tabs between the iPad window and External Display window with `⇧ Shift + ⌘ Cmd + O` or change focus to the other window using `⌘ Cmd + O`.
 
 ### Keyboard: Separate Keys
 
