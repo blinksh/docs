@@ -22,6 +22,8 @@ Start typing `ping`, and you will see a list of snips as you type. The default I
 Snips may contain template tags to fill out before executing. Fill this one out with *www.google.com*. Once Completed (`tab`), press Send (`CMD`+`ENTER`).
 <img src="/gifs/snips/ping-complete.gif" style={{maxWidth: "75%"}} />
 
+The content of a snip may span into multiple lines. At the moment (under construction), snips can only be command line sequences. When sending a command with multiple lines, Blink will automatically merge them into a block.
+
 A snip name has **folder** and **action** components. Folders help organize snips in the Index; the action usually describes what will happen. You can browse all the folders inside the default Index (repo).
 
 We designed the snips prompt to be fast and accurate when you need it. The first word will do a fuzzy search on names and quickly surface matches. For example, search for `bk` to find all the Blink-specific commands. 
@@ -44,18 +46,12 @@ We built-in some shortcuts to speed things up and empower special scenarios:
 When your search does not match any snip at the prompt, a button will automatically appear to create one.
 <img src="/gifs/snips/create.gif" style={{maxWidth: "75%"}} />
 
-Naming your snip is important so you can surface them quickly. We have a few (under construction) guidelines from what we learnt using it and creating our default Index. 
+Naming your snip is important so you can surface them quickly. We have a few [(WIP) Guidelines](https://github.com/blinksh/snippets.git) from what we learnt creating the default Index. Do not hesitate to send us your feedback.
 
-We recommend using names that indicate the action or what is expected instead of the command itself. *Examples*. Check our default Index repository for more guidelines. 
+A snip can also contain template tags to fill out using the `${tag_name}` notation. You can use the same tag name multiple times and it will be substituted in all occurrences at the same time. We have a few ([(WIP) Guidelines](https://github.com/blinksh/snippets.git) for template tags as well.
 
-A snip can also contain template tags to fill out using the `${tag_name}` notation. Some tips:
+A snip may span multiple lines. Beware that at the moment, Blink only supports snips for the command line. Multiple line rules on shell scripts apply to snips. Make sure to use a `\` if you wish to create a new line that you do not wish to send separately.
 
 After you finish, click on the `Save` button. Blink saves your snip in your Index under the specified folder and name. From then on, you can use it from the prompt.
 
 Your local Index resides in the `.blink/snippets` folder. Local snips always shadow other locations, so your local snips using the same name can customize an existing action to your liking. Ie, you can add extra flags to a command like ping.
-
-## Upcoming before general release
-- Synchronize your Snips on all your devices.
-- Comments
-- History
-- Sharing and Collaborating
