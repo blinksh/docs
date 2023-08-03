@@ -25,14 +25,15 @@ Gestures are very important inside Blink. Thanks to them we can enjoy a full scr
 * To create a new shell, you can tap the window with two fingers.
 * Swiping with one finger from side to side will move between active shells.
 * You can control the size of your terminal by pinching the screen.
-* Tapping with three fingers will open a contextual menu where you can close a shell or configure display modes.
+* Tapping twice in the iOS Home Bar, or pressing the `CMD` ⌘ key twice, in Software or Hardware keyboards, will open a contextual menu where you can create or close tabs, open Snips, or configure display modes.'
+![img](./navigation/navigating-blink-shell-contextual-bar.jpg)
 * Tapping and scrolling with a single finger will move the focus to that window and scroll it. If the application supports mouse control, then you will be able to control the pointer that way.
 * Tap and drag to start selection mode.
 * Don't be afraid to drag your selection to another app, or to drop content inside Blink, we will paste it right where your cursor is placed.
 
 ## Blink Shell Keyboard Shortcuts
 
-Blink Shell can also be easily used with keyboard shortcuts along with the finger gestures mentioned before. If you have an external keyboard attached or connected via Bluetooth press and hold the `CMD` ⌘ key to see the available shortcuts.
+Blink Shell can also be easily used with keyboard shortcuts along with the finger gestures mentioned before. If you have an external keyboard attached or connected via Bluetooth press and hold the `CMD` ⌘ key to see tHe available shortcuts.
 
 ![img](./navigation/navigating-blink-shell-image3.png)
 
