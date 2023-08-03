@@ -8,13 +8,13 @@ Snips can act as sophisticated aliases to expedite workflows, tackle complex com
 
 Snips are simple and text-based, with no complex XML or YAML structures. This simplicity ensures they are easy and efficient to maintain and distribute on multiple platforms, enabling very cool scenarios. 
 
-We organized snips into Indexes. Your Index is unique to you and your devices. Other Indexes focus on optimizing your usage of familiar CLI tools. And within your team, Indexes are a way to share workflows or playbooks to get to work at speed.
+We organized snips into Indexes. Your Index is unique to you and your devices. Blink includes a default Index [maintained by the Community](https://github.com/blinksh/snippets.git) for more general dunctionality. We plan to add other Indexes focused on optimizing your usage of familiar CLI tools. And in the future, within your team, Indexes may become a way to share workflows or playbooks to get to work at speed.
 
 As snips evolve, they will become a fundamental component of future Blink functionality. Let's dive in!
 
 ## How to use snips
 
-To open the snips prompt, use  `CMD`+`<` or select Snips through the contextual menu (double tap `⌘` in the software keyboard).
+To open the snips prompt, use  `CMD`+`<` or select Snips through the contextual menu (double tap `⌘` in the software keyboard or Home Bar).
 
 Start typing `ping`, and you will see a list of snips as you type. The default Index provides common actions for Blink usage and remote servers. Select the first snip for the ping command.
 <img src="/gifs/snips/ping-start.gif" style={{maxWidth: "75%"}} />
@@ -22,7 +22,8 @@ Start typing `ping`, and you will see a list of snips as you type. The default I
 Snips may contain template tags to fill out before executing. Fill this one out with *www.google.com*. Once Completed (`tab`), press Send (`CMD`+`ENTER`).
 <img src="/gifs/snips/ping-complete.gif" style={{maxWidth: "75%"}} />
 
-The content of a snip may span into multiple lines. At the moment (under construction), snips can only be command line sequences. When sending a command with multiple lines, Blink will automatically merge them into a block.
+The content of a snip may span into multiple lines. When sending Command Line snips, at the moment the only supported type, Blink will concatenate the lines with a semicolon. However, you can control this behavior by pressing the ➤ symbol. Other options include: sending the content in a Raw format;  enclosing it within a Bash execution block; enclose in a Begin / End block for the Fish shell. These options provide versatility and allow you to tailor the snip behavior to suit your specific needs.
+![img](./snips/send.jpg)
 
 A snip name has **folder** and **action** components. Folders help organize snips in the Index; the action usually describes what will happen. You can browse all the folders inside the default Index (repo).
 
@@ -54,4 +55,8 @@ A snip may span multiple lines. Beware that at the moment, Blink only supports s
 
 After you finish, click on the `Save` button. Blink saves your snip in your Index under the specified folder and name. From then on, you can use it from the prompt.
 
-Your local Index resides in the `.blink/snippets` folder. Local snips always shadow other locations, so your local snips using the same name can customize an existing action to your liking. Ie, you can add extra flags to a command like ping.
+Your local Index resides in the `Documents/snips` folder. Local snips always shadow other locations, so your local snips using the same name can customize an existing action to your liking. Ie, you can add extra flags to a command like ping.
+
+### Editing, Renaming and Deleting snips
+A snip's content can be modified and its name changed after creation. To do so, load the snip and modify the content. Press the down arrow next to the name for editing options like Save, Rename or Delete. When you save a Snip from the default Index, it will be saved in your default location, shadowing the original. If you want to have both accessible, use Rename.
+![img](./snips/rename.jpg)
