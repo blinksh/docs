@@ -35,7 +35,7 @@ If you have enabled [Files.app integration](/advanced/files-app) for the host, t
 Blink Code can also connect to your instance of Code Server, offering the same premium experience so you can be more productive. To do so, just copy the URL of the running code instance and use it as the parameter, like such:
 
 ```
-code gitpod.dev/asdfqwerzxcv
+code https://gitpod.dev/asdfqwerzxcv
 ```
 
 Note there are iOS limitations on the domains we can access (we are working on that). We currently support domains for GitHub Codespaces, GitPod, and Code-Server. If your Code instance is accessed through a private IP, we suggest you [open a tunnel](/advanced/advanced-ssh#tunnels) so access happens through localhost instead.
