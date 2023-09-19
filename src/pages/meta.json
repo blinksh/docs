@@ -3,6 +3,7 @@
   "what-is": "What is Blink Shell",
   "basics": "Basics",
   "advanced": "Advanced",
+  "integrations": { "title": "Integrations", "hidden": true },
   "cloud-providers": "Cloud Providers",
   "build": "Build",
   "build-up": "Build Up",
