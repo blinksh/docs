@@ -1,5 +1,6 @@
 {
-  "index": "Introduction",
+  "index": "Quick Start",
+  "what-is": "What is Blink Shell",
   "migration": "Migrate from Blink Shell 14",
   "basics": "Basics",
   "advanced": "Advanced",
