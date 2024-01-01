@@ -5,7 +5,17 @@ import { Callout } from 'nextra-theme-blinkshell'
 ## General Questions
 
 ### How to apply for a student license?
-Starting on 2022, Blink will offer Student licenses during the Back To School period, from September 1st until November 1st. The rest of the year, you are welcome to join us in our [Community Edition.](https://community.blink.sh)
+Starting on 2022, Blink will offer Student licenses during the Back to School campaign period, from September 1st until November 1st. The rest of the year, you are welcome to join us in our [Community Edition.](https://community.blink.sh)
+
+### Back To School Campaign
+Our Back to School campaign runs once a year, usually from September 1st until November 1st. It offers a 75% discount over Blink+ for the year ($4.99 for a full year!). It can be used by Students, Faculty Members and other staff of educational institutions around the world. Stay tuned when this happens again! Follow our socials/connect here to be notified:
+
+ [Join our Discord Server](http://discord.gg/ZTtMfvK)   
+ [GitHub discussions](http://github.com/blinksh/blink/discussions)  
+ [Blink Website](http://blink.sh)   
+ [Twitter](http://twitter.com/blinkshell)   
+ [Reddit](http://reddit.com/r/BlinkShell)   
+ 
 
 ### Does Blink Shell work on all Apple devices?
 We support iPhone and iPad. We are working on a new M-powered macOS version.
