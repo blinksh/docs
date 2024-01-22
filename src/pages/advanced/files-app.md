@@ -22,4 +22,4 @@ Finally, move to the Files.app, and just flip the switch on the new provider.
 - A log is automatically kept on `.blink/fileprovider.log`. If you need more information, set the LogLevel on the [SSH Config for the Host](/basics/hosts#ssh-config).
 - In case of **SFTP Subsystem errors**, please check that the server has SFTP enabled at /etc/ssh/sshd_config.
 ## Known Issues
-- IOS may not reclaim the disk space used by this extension, which could lead to the Blink App taking up alot of storage on your device. To solve this please checkout issue [#1601](https://github.com/blinksh/blink/discussions/1601).
+- iOS may not reclaim the disk space used by this extension, which could lead to the Blink App taking up alot of storage on your device. To free that space, delete (swipe left) and add again the Files.app directory in configuration for the Host. For more help, please leave a message in the [Discussion](https://github.com/blinksh/blink/discussions/1601).
