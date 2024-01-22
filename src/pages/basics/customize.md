@@ -6,7 +6,8 @@ We know it is important for you too. Having a keyboard the way you want, is seco
 
 Let's walkthrough all the ways you can have Blink work for you. To get started, run ‘config’ into one of the terminals.
 
-# Keyboard
+
+## Keyboard
 
 Within Blink, you can customize from Blink Shortcuts like “Open terminals” or “Copy - Paste” to sequences and modifiers that are sent to a terminal. You can find all the keyboard configuration under the “Keyboard” settings.
 

@@ -11,7 +11,7 @@
 
 Welcome! You can now start using Blink. Here is a quick tour:
 
-1. Works like other terminals, type in your commands and hit Return.
+1. Using Blink Shell is similar to most other terminals - you simply type commands and hit the `RETURN` key.
 2. Navigate command history with the `up` and `down` arrow keys.
 3. Type `help` to get a quick list of available [commands](basics/commands) and features.
 
@@ -24,9 +24,7 @@ Welcome! You can now start using Blink. Here is a quick tour:
 3. To adjust size of current terminal, pinch the screen 👌.
 4. To start selection mode, Tap and drag 👆🔘🔼.
 
-   You can drag selections to other apps!
-   
-   Or from other apps into Blink, it is pasted where the Blink cursor is located.
+   You can drag selections to other apps, or from other apps into Blink. It will be pasted where the cursor is located.
 
 5. To show the Context bar, tap the iOS Home Bar twice or press `CMD ⌘` twice.
 ![img](./basics/navigation/navigating-blink-shell-contextual-bar.jpg)
@@ -44,25 +42,26 @@ Welcome! You can now start using Blink. Here is a quick tour:
 
 ## SMART KEYS
 
-Smart Keys is **only** visible when using the on screen keyboard. It's hidden when using an external keyboard.
+Smart Keys provide special keys to use in your terminal session. Smart Keys are **only** visible when using the on screen keyboard, and hidden when using an external keyboard.
 
-**Smart Keys available:**
-1. Modifiers: `CTRL ^`, `ALT ⌥`, and `ESC ⎋`.
-2. Direction arrows.
-3. Tap `CMD ⌘` to view functional keys. 
+- Modifiers (i.e. `CTRL` ^, `ALT` ⌥, and `ESC` ⎋) for key combinations like `CTRL`+`C`.
+- Arrow keys.
+- Function and Alternate Cursor keys like Home, End, Page Down and Page Up when pressing `CMD` ⌘.
+- Scrollable area in the center with more keys
+- Hold a modifier to chain multiple combinations, useful in applications like Emacs where you use chains like `C-x`, `C-c`.
 <img src="/gifs/navigating-blink-shell-image4.gif" style={{maxWidth: "100%"}} />
 
 ## Configuration
 
-To access the Settings menu type `config` in the shell or press `CMD ⌘` and `,` together.
+To access the Settings menu type `config` in the shell or press `CMD ⌘` and `,` together:
 
-**The settings menu has the following:**
-
-- Host: create hosts that can be accessed with only the hostname. [Read more.](basics/hosts)
+- Hosts: create hosts that can be accessed with only the hostname. [Read more.](basics/hosts)
 - Keys: Create SSH key pairs for a more secure, password-less access to your servers. [Read more.](basics/ssh-keys)
 - Appearance: Style your terminal with [themes](basics/customize#themes) and [fonts](basics/customize#fonts).
-- Keyboard: add shortcuts, modifier keys and custom key presses.
+- Keyboard: add shortcuts, modifier keys and custom key presses. [Read more.](basics/customize#keyboard)
 - Get in contact with us through the Support or Feedback options.
+
+![img](./basics/navigation/navigating-blink-shell-image5.png)
 
 ## Connecting to a Server or Computer using Blink
 
@@ -87,5 +86,12 @@ To access the Settings menu type `config` in the shell or press `CMD ⌘` and `,
 
    [Read more about SSH.](advanced/advanced-ssh)
 
-   Welcome to your host! If successful your terminal should now be the same command prompt as the one used on your device.
+## Support and Community
 
+We sincerely appreciate your support and use of Blink. You can contact us via [email](mailto:hello@blink.sh) but ideally it is best to file issues on our [GitHub Discussions](https://github.com/blinksh/blink/discussions) so that all of the community is aware of the issue. Not only does it help make Blink better but another user may help you solve your issue.
+
+**VERY IMPORTANT: Reporting a problem in your review in the App Store will not help us solve issues that you might be experiencing. Please make sure to contact us too!**
+
+When a crash occurs in the application we receive a crash report. When this happens, please [email](mailto:hello@blink.sh) us or open a [GitHub Issue](https://github.com/blinksh/blink/issues).
+
+Do you have an idea for a feature? Join our community on [GitHub Discussions](https://github.com/blinksh/blink/discussions) to send us your suggestions!

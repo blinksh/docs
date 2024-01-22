@@ -1,12 +1,12 @@
 {
   "index": "Quick Start",
   "what-is": "What is Blink Shell",
-  "migration": "Migrate from Blink Shell 14",
   "basics": "Basics",
   "advanced": "Advanced",
   "cloud-providers": "Cloud Providers",
   "build": "Build",
   "build-up": "Build Up",
   "whats-new": "What's New?",
-  "faq": "FAQ"
+  "faq": "FAQ",
+  "migration": "(Closed) Blink Shell 14"
 }
