@@ -2,25 +2,6 @@
 
 ## Basics 
 
-### Mouse Support
-
-Enabling mouse support comes in handy when using an iPad without a keyboard as you can freely change panes in tmux or scroll throughout your apps with your fingers, few popular ones include:
-
-**TMUX:**
-```
-set -g mouse on
-```
-
-**VIM:**
-```vim
-set mouse=a
-```
-
-**EMACS:**
-```
-(xterm-mouse-mode 1)
-```
-
 ### Serving development website over HTTPS
 
 Fastest way of using HTTPS on remote machines for development is with the Caddy web server. First install it as an executable, but not service, then create Caddyfile with reverse_proxy line like this:
@@ -110,54 +91,6 @@ And use:
 viu image.png/animation.gif
 ```
 More information: [VIU GitHub Repository](https://github.com/atanunq/viu)
-
-### TMUX: Copy/Paste using OSC52
-
-Enabling copy/paste between tmux and iOS needs SSH or Blink Mosh Server.
-
-```
-set -g set-clipboard on
-set -ag terminal-overrides "vte*:XT:Ms=\\E]52;c;%p2%s\\7,xterm*:XT:Ms=\\E]52;c;%p2%s\\7"
-```
-
-VIM users can set this to have similar experience to VIM:
-
-```
-bind-key -T copy-mode-vi v send-keys -X begin-selection
-bind-key -T copy-mode-vi y send-keys -X copy-selection
-bind-key -T copy-mode-vi r send-keys -X rectangle-toggle
-```
-
-### How to enable OSC52 support in Mosh?
-You need to build Mosh from source with this patch: [Support additional OSC 52 clipboard types #1104](https://github.com/mobile-shell/mosh/pull/1104#issuecomment-710754740)
-
-## Editors
-
-### VIM: Copy/Paste between remote machine and iOS
-
-To enable copy/paste you'll need to install [ojroques/vim-oscyank](https://github.com/ojroques/vim-oscyank) and add this line to .vimrc:
-
-```vim
-autocmd TextYankPost * if v:event.operator is 'y' && v:event.regname is '' | OSCYankReg " | endif"
-```
-And enable this setting:
-```vim
-set clipboard& clipboard^=unnamed,unnamedplus
-```
-
-### VIM: Exit insert mode without ESC key
-
-Change CapsLock in Blink Settings to Control and press Ctrl(CapsLock) + [ to exit insert mode on iPad keyboards without ESC key.
-
-### Emacs: Copy/Paste using OSC52
-
-To enable copy/paste on Emacs, you can install [clipetty](https://github.com/spudlyo/clipetty). See the GitHub repo for the complete documentation, but for basic configuration using [`use-package`](https://github.com/jwiegley/use-package), you can add this to your config:
-
-```
-(use-package clipetty
-  :ensure t
-  :hook (after-init . global-clipetty-mode))
-```
 
 ### Emacs: Custom Presses
 
