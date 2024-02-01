@@ -129,8 +129,7 @@ export default {
   footerEditLink: "Edit this page on GitHub",
   footerText: (
     <>
-      © {new Date().getFullYear()} Blink Shell is developed by The Blink Shell
-      Project.
+      © {new Date().getFullYear()} Blink Shell is developed by Blink Shell Inc.
     </>
   ),
   darkMode: true,
