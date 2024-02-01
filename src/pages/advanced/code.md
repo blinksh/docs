@@ -60,3 +60,15 @@ Blink Code offers the same on-screen keyboard as the terminal. When you play wit
 
 ## Keyboard Shortcuts
 Blink Shell makes heavy use of keyboard shortcuts for navigation. Some of these may suppress VSCode keyboard shortcuts that you may deem necessary for your workflow. If so, you can easily reconfigure any by following [Blink Shortcuts](/basics/customize#blink-shortcuts).
+
+# Troubleshooting
+- If VS Code is not loading at all or it is showing a blank screen, try closing the tab and starting `code` again. Also, try closing Blink and reopening it.
+  - Try using the --vscode-url parameter, like this: `code —vscode-url vscode.dev`. Then try to reload without it.
+  - Try using the same URL with Safari (and if using just `code .`, use `vscode.dev`) under the same device. This may show if the device has some problems loading the URL. If Safari loaded, try to run the command again under Blink.
+- Make sure the Blink-FS extension is installed and enabled. In order to use SFTP this extension is very important as seen in this [Discussion](https://github.com/blinksh/blink/issues/1304).
+- If you have issues enabling Blink-FS, or getting the extensions to come through, https://vscode.dev may be having problems. In those cases, we have seen that changing to the Nightly version may work, as suggested in this [Discussion](https://github.com/blinksh/blink/discussions/1795#discussioncomment-6262467).
+- Make sure SFTP is enabled in the remote, and that authentication requires no user input (like passwords or 2FA). One good test for this is to [enable the Files.app integration](https://docs.blink.sh/advanced/files-app) and browsing files there, as pointed out in this [Discussion](https://github.com/blinksh/blink/issues/1880).
+- Make sure your remote path is valid. Try accessing your home folder with `code <host>:~/`. Then try using the Files.app integration, navigate to the folder you want to work on, long tap on it and `Open in Code`. This will automatically complete the paths for you and will allow you to see how it is accessed in the remote.
+- Check logs `~/.blink/blinkCode.log`. This may give you a clue of where things stopped.
+- Send a support request with the logs to [Github Discussions](https://github.com/blinksh/blink/discussions), create your `New discussion` under the `Support` category.
+
