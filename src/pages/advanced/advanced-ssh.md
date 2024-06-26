@@ -23,13 +23,15 @@ Phones and tablets are tuned for extended battery life, but the power saving tec
 
 Installing private keys on untrusted hosts is a security risk, but some users still need to perform operations, like cloning GitHub repositories, without giving them their credentials. An Agent is a program that tracks the user's private keys, offering them for authentication across different sessions or authorizing remote hosts on its behalf. The typical `ssh-agent` helps use the keys to log into other servers without repeatedly typing passphrases. The Secure Enclave handles Blink's key encryption so we will be focusing on its use on remote hosts through Agent Forwarding. This way, instead of installing a GitHub key on the remote, the agent can authenticate on your behalf without exposing keys.
 
-Blink's agent is integrated into the system, so it does not require running a separate application.
+Blink's agent is integrated into the system, so it does not require running a separate application. You can configure the default agent in Settings > Default Agent.
 
-You can load specific keys at any time by specifying the filename with `ssh-add KEY_NAME`. To see which keys the agent holds, run `ssh-add -l`. To remove a key, use the `-d` flag. Note you can add keys at any time before or after you have forwarded the agent.
+At the CLI, you can load specific keys at any time by specifying the filename with `ssh-add KEY_NAME`. To see which keys the agent holds, run `ssh-add -l`. To remove a key, use the `-d` flag. Note you can add keys at any time before or after you have forwarded the agent. Since Blink 17.3.0, the agent will always hold your keys even between app sessions.
 
 To enable SSH agent forwarding, connect with `ssh -A` option, or set `ForwardAgent` to `YES` on your [SSH Config](/basics/hosts#ssh-config). This securely makes the keys available to the remote machine. Don't worry - the SSH keys are not copied or exported to the remote server in any way, the agent only accepts signature petitions, and it will only remain open for the duration of that specific SSH connection.
 
-Even though SSH agent forwarding has numerous safeguards in place, an application running on the remote server can still use your key for unintended or possibly malicious purposes. To help mitigate this risk, we recommend using separate, single-purpose keys for SSH agent forwarding with limited exposure. For example, it is typical - but dangerous - to generate a single default key and use it to log in to servers or services like GitHub. Instead, create single-purpose keys that will limit the exposure: in our GitHub case, create a GitHub key.
+Even though SSH agent forwarding has numerous safeguards in place, an application running on the remote server can still use your key for unintended or possibly malicious purposes. To help mitigate this risk, Blink by default will prompt the user specifying which server is trying to use what key. This feature can be configured at Settings > Default Agent > Prompt.
+
+Additionally, we recommend using separate, single-purpose keys for SSH agent forwarding with limited exposure. For example, it is typical - but dangerous - to generate a single default key and use it to log in to servers or services like GitHub. Instead, create single-purpose keys that will limit the exposure: in our GitHub case, create a GitHub key.
 
 To learn more about the security implications of SSH agent forwarding, please see [this](https://heipei.io/2015/02/26/SSH-Agent-Forwarding-considered-harmful/).
 
@@ -43,7 +45,7 @@ ssh -L 8080:localhost:8080 host
 
 Replacing `host` with the remote hostname or IP. Once authenticated, a service listening on port `8080` on the remote machine will now be accesible as though it were on your local device. A connection to `localhost:8080` will be forwarded via the SSH tunnel to the remote computer.
 
-Blink Shell supports both LocalForward (-L) and RemoteForward (-R). You can also set up your tunnels inside the SSH Config for the Host. This way, all your tunnels will get started with the connection, without the need to explicitely pass them at the command line. 
+Blink Shell supports both LocalForward (-L) and RemoteForward (-R). You can also set up your tunnels inside the SSH Config for the Host. This way, all your tunnels will get started with the connection, without the need to explicitely pass them at the command line.
 
 **PRO TIP:** Blink can also start the tunnels in the background, without starting an interactive shell. Check out the `-N` parameter for this purpose.
 

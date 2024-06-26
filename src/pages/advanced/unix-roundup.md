@@ -55,7 +55,7 @@ md5 filename.tar
 tar xfz filename.tar -C destination
 ```
 
-Blink Shell provides far more utilities and here's a list: `awk`, `cat`, `chflags`, `chksum`, `compress`, `cp`, `diff`, `du`, `ed`, `egrep`, `fgrep`, `find`, `gunzip`, `gzip`, `head`, `link-files`, `ln`, `ls`, `md5`, `mv`, `pwd`, `rm`, `rmdir`, `sed`, `sort`, `tail`, `tar`, `touch`, `uncompress`, `uniq`, `wc` & `xargs`.
+Blink Shell provides far more utilities and here's a list: `awk`, `bc`, `cat`, `chflags`, `chksum`, `compress`, `cp`, `diff`, `du`, `egrep`, `fgrep`, `find`, `gunzip`, `gzip`, `head`, `less`, `link-files`, `ln`, `ls`, `md5`, `mv`, `pwd`, `rm`, `rmdir`, `sed`, `sort`, `tail`, `tar`, `touch`, `uncompress`, `uniq`, `wc` & `xargs`.
 
 ## Remote Transfer Tools
 
@@ -86,7 +86,7 @@ Have a little downtime? Have some retro fun with `telnet`:
 telnet towel.blinkenlights.nl
 ```
 
-We provide a full set of network utilities, including: `dig`, `host`, `nslookup`, `ssh`, `mosh`, `nc`, `ping`, `rlogin` and `udptunnel`.
+We provide a full set of network utilities, including: `dig`, `host`, `nslookup`, `ssh`, `mosh`, `nc`, `ping`, `ping6`, `rlogin` and `udptunnel`.
 
 ## Miscellaneous
 
