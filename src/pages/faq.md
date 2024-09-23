@@ -4,15 +4,8 @@ import { Callout } from 'nextra-theme-blinkshell'
 
 ## General Questions
 
-### Back To School Campaign
-Our Back to School campaign runs once a year, usually from September 1st until November 1st. It offers a 75% discount over Blink+ for the year ($4.99 for a full year!). It can be used by Students, Faculty Members and other staff of educational institutions around the world. Stay tuned when this happens again! Follow our socials/connect here to be notified:
-
- [Join our Discord Server](http://discord.gg/ZTtMfvK)   
- [GitHub discussions](http://github.com/blinksh/blink/discussions)  
- [Blink Website](http://blink.sh)   
- [Twitter](http://twitter.com/blinkshell)   
- [Reddit](http://reddit.com/r/BlinkShell)   
- 
+### How to apply for a student license?
+[Back To School 2024 is here!!](#back-to-school-2024-is-here). This year, we are extending our Back To School period until December 31st 2024. Apply for yours right now and don't forget to spread the word!
 
 ### Does Blink Shell work on all Apple devices?
 We support iPhone and iPad. We are working on a new M-powered macOS version.
@@ -22,6 +15,21 @@ Yes, it has! We call it Community Edition, and you can sign up here: [https://co
 
 ### How to file a bug report?
 Fill an issue on our [GitHub](https://github.com/blinksh/blink/issues)
+
+## Back to school 2024 is here!!
+This year, our Back to School campaign will run until December 31st 2024, and it offers a 75% discount over Blink+ for an entire year (only $4.99!). This offer is available to Students, Faculty Members and other staff at educational institutions worldwide. You can [apply here](https://forms.gle/HvYyjobVLA42GobQ9).
+
+### Why not free?
+Here's a short story. In college, I once helped a friend with a C++ assignment. He insisted on paying me, even though I didn't want him to. He said, "This way, you will know  I value your work, and if I need you changes, I won't feel bad asking". And he was right. So, here is the deal: we're giving you an awesome friend discount on Blink so you value our work, and that way, you'll feel comfortable seeking for help if anything comes up.
+
+### How does it work?
+First, [apply here](https://forms.gle/HvYyjobVLA42GobQ9). Within a few days (since we send codes manually), you will receive a link to redeem Blink with your special discount. Please make sure to redeem it as soon as you get it.
+
+### My code expired, can I get another one?
+Sorry, you needed to redeem your code before Dec 31st 2024. We cannot issue new ones.
+
+### I don't have a school email. How do I apply?
+Sorry, we can only offer this promo to those who have a school email address as that is our only way to verify your eligibility. Thanks for understanding.
 
 ## Pricing
 
