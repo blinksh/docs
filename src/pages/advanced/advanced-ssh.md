@@ -33,7 +33,7 @@ Even though SSH agent forwarding has numerous safeguards in place, an applicatio
 
 Additionally, we recommend using separate, single-purpose keys for SSH agent forwarding with limited exposure. For example, it is typical - but dangerous - to generate a single default key and use it to log in to servers or services like GitHub. Instead, create single-purpose keys that will limit the exposure: in our GitHub case, create a GitHub key.
 
-To learn more about the security implications of SSH agent forwarding, please see [this](https://heipei.io/2015/02/26/SSH-Agent-Forwarding-considered-harmful/).
+To learn more about the security implications of SSH agent forwarding, please see [this](https://heipei.github.io/2015/02/26/SSH-Agent-Forwarding-considered-harmful/).
 
 ## Tunnels
 
