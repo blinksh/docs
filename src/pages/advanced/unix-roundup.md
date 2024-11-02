@@ -17,6 +17,7 @@ iOS limits you to a sandbox, but you can make the most of this by linking files 
 Once you've linked the desired folder you're ready to go. Want to make folders in iCloud? No problem,
 
 ```bash
+cd iCloud/
 mkdir docs
 ```
 
@@ -66,7 +67,13 @@ scp file user@remotehost:remotepath
 sftp user@remotehost:remotepath
 ```
 
-In this example, we will transfer a file named `file` to the server `remotehost` with the username of `user` to place it in the `remotepath` folder. `scp` accepts wildcards, allowing the transfer of multiple files at once, but you can also `tar` the files for a better transfer experience. Blink will 
+In this example, we will transfer a file named `file` to the server `remotehost` with the username of `user` to place it in the `remotepath` folder. `scp` accepts wildcards, allowing the transfer of multiple files at once, but you can also `tar` the files for a better transfer experience.
+
+To download a file from the server, run:
+
+```bash
+scp user@remotehost:remotepath link-files-folder/file
+```
 
 Although the `sftp` command in UNIX environments is interactive, Blink Shell uses scp and sftp interchangeably. If you wish to start an interactive session, we have a better solution with our [Files.app integration](/advanced/files-app). This is a fantastic way to browse and open files in a remote Host.
 
