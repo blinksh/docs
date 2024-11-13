@@ -28,7 +28,7 @@ Add the following to your `~/.vimrc`:
 let data_dir = expand('~/.vim')
 if empty(glob(data_dir . '/autoload/blink.vim'))
     call mkdir(expand(data_dir."/autoload"),"p")
-    silent execute '!curl -fLo ' . data_dir . '/autoload/blink.vim --create-dirs  https://raw.githubusercontent.com/rrgeorge/vim-blink/master/blink.vim'
+    silent execute '!curl -fLo ' . data_dir . '/autoload/blink.vim --create-dirs  https://raw.githubusercontent.com/rrgeorge/vim-blink/main/blink.vim'
 endif
 
 let g:blink_path=~/.vim/pack/blink
