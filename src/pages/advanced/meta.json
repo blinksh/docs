@@ -2,9 +2,10 @@
   "advanced-ssh": "SSH",
   "webauthn": "WebAuthn: Passkeys & Secure Keys",
   "advanced-mosh": "Mosh",
+  "files-app": "Files.app",
+  "bookmarks": "Bookmarked Locations",
   "vim": "Vim",
   "code": "Code",
-  "files-app": "Files.app",
   "unix-roundup": "UNIX Roundup",
   "socks": "SOCKS",
   "creating-fonts-and-themes": "Creating Fonts & Themes"
