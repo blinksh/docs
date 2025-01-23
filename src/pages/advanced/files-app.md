@@ -39,6 +39,8 @@ To access remote files from the shell, start by bookmarking a location. (See the
 
 From the shell, you can use familiar CLI tools such as `cd`, `ls`, and even native `vim` to interact with files. To open a share sheet directly from the shell, use the `open` command.
 
+Note that while using the Shell to access files, changes from your device to the remote will synchronize automatically, but changes from the remote will require you to open that location within the Files.app. This is due to the lifetime of the extensions inside the iOS system.
+
 <img src="/gifs/bookmarks_use_with_shell.gif" style={{maxWidth: "75%"}} />
 
 ## Access from Other Apps
